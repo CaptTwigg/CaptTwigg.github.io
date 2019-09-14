@@ -6,7 +6,7 @@ body {
 }
 
 .wrapper {
-    margin: 1% 30% 1% 30%;
+    margin: 5% 30% ;
     padding: 50px;
     background: white;
     border-radius: 50px;
@@ -20,9 +20,10 @@ body {
 }
 
 .socialMedia{
-    width: 100px;
-    height: 100px;
+    width: 512px;
+    height: 512px;
     padding: 10px 40px;
+    color: black;
 }
 
 .center {
@@ -42,19 +43,17 @@ p{
 @media only screen and (max-width: 1000px) {
 
     .wrapper {
-        margin: 1% 5% 1% 5%;
+        margin: 5% 5% ;
 
     }
 
     h1 {
-        font-size: 600%;
+        font-size: 400%;
     }
 
     p{
-        font-size: 150%;
+        font-size: 200%;
     }
 
-    .socialMedia{
-    padding: 10px 60px;
-}
+
 }
