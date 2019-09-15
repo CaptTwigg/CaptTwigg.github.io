@@ -48,12 +48,12 @@ hr{
 }
 
 h1 {
-    font-size: 600%;
+    font-size: 300%;
 
 }
 
 p {
-    font-size: 300%;
+    font-size: 100%;
 }
 
 @media only screen and (max-width: 1000px) {
