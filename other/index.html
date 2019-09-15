@@ -5,41 +5,80 @@
     <title>flex</title>
 </head>
 <body>
-<ul class="flex-container">
-  <li class="flex-item">1</li>
-  <li class="flex-item">2</li>
-  <li class="flex-item">3</li>
-  <li class="flex-item">4</li>
-  <li class="flex-item">5</li>
-  <li class="flex-item">6</li>
-</ul>
+
+<div class="sectionWrapper">
+    <p>SECTIONWRAPPER</p>
+    <div class="col_wide">
+        <p>COL_WIDE</p>
+        <div class="top">
+            <p>TOP</p>
+        </div>
+        <div class="bottom">
+            <p>BoTTOM</p>
+        </div>
+
+    </div>
+</div>
+
+<div id="section" class="sectionWrapper">
+    <p>SECTIONWRAPPER</p>
+    <div class="col_wide">
+        <p>COL_WIDE</p>
+        <div class="top">
+            <p>TOP</p>
+        </div>
+        <div class="top">
+            <p>TOP</p>
+        </div>
+        <div class="top">
+            <p>TOP</p>
+        </div>
+
+    </div>
+</div>
+
 </body>
 
 <style>
-    .flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-}
+    .sectionWrapper {
+        border: 1px solid black;
+        display: flex;
+        padding: 20px;
+        margin: 10px;
 
-.flex-item {
-  background: tomato;
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
-}
+    }
+
+    .col_wide {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        padding: 20px;
+        margin: 10px;
+
+    }
+
+    #section .col_wide {
+        flex-direction: row;
+
+    }
+
+    .top {
+        border: 1px solid black;
+        height: 200px;
+        padding: 20px;
+        margin: 10px;
+
+    }
+
+    .bottom {
+        border: 1px solid black;
+        height: 200px;
+        padding: 20px;
+        margin: 10px;
+    }
 </style>
+
+<script>
+
+</script>
 </html>
