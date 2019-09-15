@@ -1,84 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>flex</title>
+<!DOCTYPE html><html><head>
+  <script src="p5.js"></script>
+  <script src="p5.dom.min.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+
 </head>
+
 <body>
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 
-<div class="sectionWrapper">
-    <p>SECTIONWRAPPER</p>
-    <div class="col_wide">
-        <p>COL_WIDE</p>
-        <div class="top">
-            <p>TOP</p>
-        </div>
-        <div class="bottom">
-            <p>BoTTOM</p>
-        </div>
 
-    </div>
-</div>
 
-<div id="section" class="sectionWrapper">
-    <p>SECTIONWRAPPER</p>
-    <div class="col_wide">
-        <p>COL_WIDE</p>
-        <div class="top">
-            <p>TOP</p>
-        </div>
-        <div class="top">
-            <p>TOP</p>
-        </div>
-        <div class="top">
-            <p>TOP</p>
-        </div>
+<script src="sketch.js"></script>
 
-    </div>
-</div>
-
-</body>
-
-<style>
-    .sectionWrapper {
-        border: 1px solid black;
-        display: flex;
-        padding: 20px;
-        margin: 10px;
-
-    }
-
-    .col_wide {
-        display: flex;
-        flex-direction: column;
-        border: 1px solid black;
-        padding: 20px;
-        margin: 10px;
-
-    }
-
-    #section .col_wide {
-        flex-direction: row;
-
-    }
-
-    .top {
-        border: 1px solid black;
-        height: 200px;
-        padding: 20px;
-        margin: 10px;
-
-    }
-
-    .bottom {
-        border: 1px solid black;
-        height: 200px;
-        padding: 20px;
-        margin: 10px;
-    }
-</style>
-
-<script>
-
-</script>
-</html>
+</body></html>
