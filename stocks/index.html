@@ -4907,7 +4907,14 @@ body{margin:0;background:#0f172a;color:#f1f5f9;
   function attachTip(el){
     el.addEventListener('mouseenter',function(){clearTimeout(hideTimer);tipTarget=el;positionTip(el);});
     el.addEventListener('mouseleave',function(){hideTimer=setTimeout(hideTip,80);});
+    // Touch: only show on a true tap — suppress if finger moved (scroll)
+    var tStartX=0,tStartY=0,tMoved=false;
+    el.addEventListener('touchstart',function(e){
+      tStartX=e.touches[0].clientX; tStartY=e.touches[0].clientY; tMoved=false;
+    },{passive:true});
+    el.addEventListener('touchmove',function(){ tMoved=true; },{passive:true});
     el.addEventListener('touchend',function(e){
+      if(tMoved) return;           // finger dragged = scroll, ignore
       e.preventDefault();
       if(tipTarget===el){hideTip();return;}
       tipTarget=el; positionTip(el);
