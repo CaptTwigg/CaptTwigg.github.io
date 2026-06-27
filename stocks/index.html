@@ -1272,8 +1272,8 @@ body{margin:0;background:#0f172a;color:#f1f5f9;
 
   // ── Filters ────────────────────────────────────────────────────────────────
   var LS='div_v1_filters';
-  function ls(){try{return JSON.parse(localStorage.getItem(LS)||'{}');}catch(e){return {};}}
-  function sv(){try{localStorage.setItem(LS,JSON.stringify({sector:aS,exchange:aE,freq:aF,country:aC,yield:minY,score:minSc}))};catch(e){}}
+  function ls(){try{return JSON.parse(localStorage.getItem(LS)||'{}')}catch(e){return {};}}
+  function sv(){try{localStorage.setItem(LS,JSON.stringify({sector:aS,exchange:aE,freq:aF,country:aC,yield:minY,score:minSc}))}catch(e){}}
   var saved=ls();
   var aS=saved.sector||'', aE=saved.exchange||'', aF=saved.freq||'', aC=saved.country||'';
   var slider=document.getElementById('score-slider'), slMin=parseInt(slider.min,10);
