@@ -398,6 +398,11 @@ main{max-width:var(--maxw);margin:0 auto;padding:var(--sp-5) var(--sp-5) var(--s
   border:1px dashed var(--border);border-radius:var(--radius-sm)}
 .btn-savepreset:hover{background:var(--surface-2);border-color:var(--accent-2)}
 .btn-savepreset:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* Filter button/drawer hidden on desktop — overridden by @media below */
+.mob-filter-btn{display:none}
+.mob-backdrop{display:none}
+.mob-drawer{display:none}
+
 @media (max-width:560px){
   .header{padding:var(--sp-5) var(--sp-4) var(--sp-4)}
   main{padding:var(--sp-4)}
@@ -497,10 +502,6 @@ main{max-width:var(--maxw);margin:0 auto;padding:var(--sp-5) var(--sp-5) var(--s
   }
 }
 
-/* Filter button hidden on desktop */
-.mob-filter-btn{display:none}
-.mob-backdrop{display:none}
-.mob-drawer{display:none}
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important;scroll-behavior:auto!important}
 }
@@ -1364,7 +1365,7 @@ details.build-detail p {
 </main>
 
 <footer class="footer">
-  Generated 2026-06-28 06:41 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
+  Generated 2026-06-28 06:44 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
   Estimates (buildable headroom, AI floor-plan reads, commute times) are heuristic — verify with the kommune and the listing.
 </footer>
 <script>const listings = [
