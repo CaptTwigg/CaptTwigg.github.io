@@ -558,10 +558,10 @@ main{max-width:var(--maxw);margin:0 auto;padding:var(--sp-5) var(--sp-5) var(--s
 }
 
 /* 2-pass multigen vision badge */
-.vision-multigen{margin-top:6px;font-size:12px;padding:5px 10px;border-radius:0 6px 6px 0;border-left:3px solid}
+.vision-multigen{margin-top:6px;font-size:12px;padding:5px 10px;border-radius:6px;border-left:3px solid}
 .vm-strong{background:#dcfce7;color:#15803d;border-color:#86efac}
 .vm-possible{background:#fef3c7;color:#92400e;border-color:#fcd34d}
-.vm-unlikely{background:#f1f5f9;color:#64748b;border-color:#cbd5e1}
+.vm-unlikely{background:#fee2e2;color:#b91c1c;border-color:#fca5a5}
 
 .sig-row {
   display: flex; align-items: center; justify-content: space-between;
@@ -1233,7 +1233,7 @@ details.build-detail p {
 </main>
 
 <footer class="footer">
-  Generated 2026-06-28 05:04 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
+  Generated 2026-06-28 05:11 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
   Estimates (buildable headroom, AI floor-plan reads, commute times) are heuristic — verify with the kommune and the listing.
 </footer>
 <script>const listings = [
@@ -28298,7 +28298,7 @@ function buildCard(l) {
   var multigen = l.vision_multigen_layout || '';
   var vmClassMap = {strong: 'vm-strong', possible: 'vm-possible', unlikely: 'vm-unlikely'};
   var vmClass = vmClassMap[multigen] || '';
-  var vmLabelMap = {strong: '🧬 Multi-gen: STRONG', possible: '🧬 Multi-gen: possible', unlikely: '🧬 single dwelling'};
+  var vmLabelMap = {strong: '🧬 Multi-gen: stærk', possible: '🧬 Multi-gen: mulig', unlikely: '⚠️ Sandsynligvis enkelt bolig'};
   var vmLabel = vmLabelMap[multigen] || '';
   var vmDetails = [];
   if (l.vision_separate_entrance === true) vmDetails.push('sep. entrance ✅');
@@ -28335,20 +28335,8 @@ function buildCard(l) {
     '<span class="pill">' + I.garden + ' ' + l.garden_m2 + ' m\u00b2</span>' +
     (l.build_headroom ? '<span class="pill build-pill" title="' + l.build_note + '">🧱 +' + l.build_headroom + ' m\u00b2</span>' : '') +
     '</div>' +
-    '<div class="sec">' +
-    '<span class="sec-title">Tofamilie-vurdering</span>' +
-    '<button id="' + btnId + '" class="expand-btn" type="button" aria-expanded="false" aria-controls="' + panelId + '">' +
-    I.chevron + ' <span class="btn-txt">Vis begrundelse</span></button>' +
-    '<div id="' + panelId + '" class="expand-panel" role="region" aria-label="Begrundelse for tofamilie-vurdering">' +
-    (l.two_family_reasons || []).map(function(r){ return '<p class="reason-item">' + r + '</p>'; }).join('') +
-    (l.vision_rooms && l.vision_rooms.length ? '<p class="reason-rooms">Rum på plan: ' + l.vision_rooms.join(' \u00b7 ') + '</p>' : '') +
-    '</div>' +
-    (l.vision ? '<p class="vision-note" role="note">' + l.vision + '</p>' : '') +
-    vmHtml +
-    '</div>' +
-    '<div class="sec">' +
-    '<span class="sec-title">Signaler</span>' +
-    '</div>' +
+    (vmHtml ? '<div class="sec">' + vmHtml + '</div>' : '') +
+
     (commuteRows ? '<div class="sec"><span class="sec-title">Pendlertid</span>' + commuteRows + '</div>' : '') +
     (hasSold ? '<div class="sec"><div class="sold-hd"><span class="sec-title">Salghistorik</span>' + trendSection +
       '<button id="' + soldBtnId + '" class="sold-expand-btn" type="button" aria-expanded="false" aria-controls="' + soldPanId + '">' + I.chevron + ' <span class="btn-txt">Historik</span></button></div>' +
