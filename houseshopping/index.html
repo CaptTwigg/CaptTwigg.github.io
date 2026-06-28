@@ -730,6 +730,19 @@ main{max-width:var(--maxw);margin:0 auto;padding:var(--sp-5) var(--sp-5) var(--s
 .vm-possible{background:#fef3c7;color:#92400e;border-color:#fcd34d}
 .vm-unlikely{background:#fee2e2;color:#b91c1c;border-color:#fca5a5}
 
+/* Parking pill */
+.parking-pill{background:#e0f2fe;color:#0c4a6e;border-color:#7dd3fc}
+/* Bathroom pills */
+.bath-green{background:#dcfce7;color:#166534;border-color:#86efac}
+.bath-amber{background:#fef9c3;color:#713f12;border-color:#fde047}
+/* Family score badge */
+.family-score-badge{display:inline-flex;align-items:center;gap:4px;margin-top:6px;padding:4px 10px;border-radius:999px;font-size:0.6875rem;font-weight:700;letter-spacing:0.02em}
+.family-score-high{background:#dcfce7;color:#166534;border:1px solid #86efac}
+.family-score-mid{background:#fef9c3;color:#713f12;border:1px solid #fde047}
+.family-score-low{background:#fee2e2;color:#991b1b;border:1px solid #fca5a5}
+/* Garden vision signals */
+.vision-garden{margin-top:4px;font-size:12px;color:var(--muted);padding:3px 0}
+
 .sig-row {
   display: flex; align-items: center; justify-content: space-between;
   gap: 8px;
@@ -1401,7 +1414,7 @@ details.build-detail p {
 </main>
 
 <footer class="footer">
-  Generated 2026-06-28 09:54 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
+  Generated 2026-06-28 11:20 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
   Estimates (buildable headroom, AI floor-plan reads, commute times) are heuristic — verify with the kommune and the listing.
 </footer>
 <script>const listings = [
@@ -1437,6 +1450,14 @@ details.build-detail p {
     "vision_separate_entrance": true,
     "vision_second_kitchen": true,
     "vision_privacy_score": 5,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1504,6 +1525,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1576,6 +1605,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1648,6 +1685,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1720,6 +1765,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1787,6 +1840,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1860,6 +1921,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1938,6 +2007,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2016,6 +2093,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2093,6 +2178,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2170,6 +2263,14 @@ details.build-detail p {
     "vision_separate_entrance": true,
     "vision_second_kitchen": true,
     "vision_privacy_score": 5,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2231,6 +2332,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2308,6 +2417,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2386,6 +2503,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2458,6 +2583,14 @@ details.build-detail p {
     "vision_separate_entrance": true,
     "vision_second_kitchen": false,
     "vision_privacy_score": 4,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2525,6 +2658,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2602,6 +2743,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2679,6 +2828,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2755,6 +2912,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2826,6 +2991,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2898,6 +3071,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2975,6 +3156,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3042,6 +3231,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3114,6 +3311,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3190,6 +3395,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3250,6 +3463,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3327,6 +3548,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3394,6 +3623,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3461,6 +3698,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3521,6 +3766,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3587,6 +3840,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3653,6 +3914,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3729,6 +3998,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3795,6 +4072,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3867,6 +4152,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3927,6 +4220,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3999,6 +4300,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4059,6 +4368,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4130,6 +4447,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4197,6 +4522,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4274,6 +4607,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4350,6 +4691,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4410,6 +4759,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4476,6 +4833,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4552,6 +4917,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4629,6 +5002,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4700,6 +5081,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4771,6 +5160,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4847,6 +5244,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4923,6 +5328,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4989,6 +5402,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5050,6 +5471,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5126,6 +5555,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5193,6 +5630,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5264,6 +5709,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5330,6 +5783,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5391,6 +5852,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5452,6 +5921,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5518,6 +5995,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5584,6 +6069,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5655,6 +6148,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5721,6 +6222,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5787,6 +6296,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5854,6 +6371,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5914,6 +6439,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5986,6 +6519,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6052,6 +6593,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6119,6 +6668,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6179,6 +6736,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6246,6 +6811,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6306,6 +6879,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6377,6 +6958,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6453,6 +7042,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6519,6 +7116,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6596,6 +7201,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6656,6 +7269,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6733,6 +7354,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6800,6 +7429,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6866,6 +7503,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6926,6 +7571,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6993,6 +7646,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7054,6 +7715,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7126,6 +7795,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7192,6 +7869,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7268,6 +7953,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7334,6 +8027,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7395,6 +8096,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7461,6 +8170,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7533,6 +8250,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7600,6 +8325,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7660,6 +8393,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7736,6 +8477,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7812,6 +8561,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7878,6 +8635,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7955,6 +8720,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -8021,6 +8794,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -8087,6 +8868,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -8153,6 +8942,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -8220,6 +9017,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -8296,6 +9101,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -8367,6 +9180,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -8428,6 +9249,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -8499,6 +9328,14 @@ details.build-detail p {
     "vision_separate_entrance": true,
     "vision_second_kitchen": false,
     "vision_privacy_score": 4,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -8571,6 +9408,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -8643,6 +9488,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -8710,6 +9563,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -8778,6 +9639,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -8854,6 +9723,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -8931,6 +9808,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9007,6 +9892,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9084,6 +9977,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9144,6 +10045,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9220,6 +10129,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9286,6 +10203,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9362,6 +10287,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9429,6 +10362,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9496,6 +10437,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9573,6 +10522,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9639,6 +10596,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9715,6 +10680,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9776,6 +10749,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9842,6 +10823,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9902,6 +10891,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -9968,6 +10965,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10034,6 +11039,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10100,6 +11113,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10177,6 +11198,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10243,6 +11272,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10303,6 +11340,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10379,6 +11424,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10455,6 +11508,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10521,6 +11582,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10593,6 +11662,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10653,6 +11730,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10719,6 +11804,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10785,6 +11878,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10861,6 +11962,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10932,6 +12041,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -10999,6 +12116,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -11076,6 +12201,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -11142,6 +12275,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -11213,6 +12354,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -11289,6 +12438,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -11360,6 +12517,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -11431,6 +12596,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -11498,6 +12671,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -11564,6 +12745,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -11624,6 +12813,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -11695,6 +12892,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -11761,6 +12966,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -11838,6 +13051,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -11910,6 +13131,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -11977,6 +13206,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -12054,6 +13291,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -12125,6 +13370,14 @@ details.build-detail p {
     "vision_separate_entrance": true,
     "vision_second_kitchen": false,
     "vision_privacy_score": 4,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -12201,6 +13454,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -12278,6 +13539,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -12355,6 +13624,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -12422,6 +13699,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -12499,6 +13784,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -12576,6 +13869,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -12637,6 +13938,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -12713,6 +14022,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -12790,6 +14107,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -12850,6 +14175,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -12927,6 +14260,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -12998,6 +14339,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -13069,6 +14418,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -13146,6 +14503,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -13222,6 +14587,14 @@ details.build-detail p {
     "vision_separate_entrance": true,
     "vision_second_kitchen": false,
     "vision_privacy_score": 4,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -13293,6 +14666,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -13360,6 +14741,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -13437,6 +14826,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -13497,6 +14894,14 @@ details.build-detail p {
     "vision_separate_entrance": true,
     "vision_second_kitchen": false,
     "vision_privacy_score": 4,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -13557,6 +14962,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -13633,6 +15046,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -13699,6 +15120,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -13776,6 +15205,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -13852,6 +15289,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -13920,6 +15365,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -13986,6 +15439,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -14058,6 +15519,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -14118,6 +15587,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -14194,6 +15671,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -14266,6 +15751,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -14337,6 +15830,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -14403,6 +15904,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -14479,6 +15988,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -14555,6 +16072,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -14632,6 +16157,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -14709,6 +16242,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -14785,6 +16326,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -14862,6 +16411,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -14933,6 +16490,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -15009,6 +16574,14 @@ details.build-detail p {
     "vision_separate_entrance": true,
     "vision_second_kitchen": false,
     "vision_privacy_score": 4,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -15081,6 +16654,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -15158,6 +16739,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -15229,6 +16818,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -15305,6 +16902,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -15372,6 +16977,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -15449,6 +17062,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -15525,6 +17146,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -15597,6 +17226,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -15670,6 +17307,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -15730,6 +17375,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -15806,6 +17459,14 @@ details.build-detail p {
     "vision_separate_entrance": true,
     "vision_second_kitchen": false,
     "vision_privacy_score": 4,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -15867,6 +17528,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -15939,6 +17608,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16010,6 +17687,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16070,6 +17755,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16142,6 +17835,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16219,6 +17920,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16285,6 +17994,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16362,6 +18079,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16433,6 +18158,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16500,6 +18233,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16567,6 +18308,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16639,6 +18388,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16706,6 +18463,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16782,6 +18547,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16853,6 +18626,14 @@ details.build-detail p {
     "vision_separate_entrance": true,
     "vision_second_kitchen": null,
     "vision_privacy_score": 4,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16919,6 +18700,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -16986,6 +18775,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -17052,6 +18849,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -17112,6 +18917,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -17172,6 +18985,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -17233,6 +19054,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -17294,6 +19123,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -17372,6 +19209,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -17432,6 +19277,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -17492,6 +19345,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -17564,6 +19425,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -17640,6 +19509,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -17711,6 +19588,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -17782,6 +19667,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -17853,6 +19746,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -17924,6 +19825,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18001,6 +19910,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18072,6 +19989,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18138,6 +20063,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18215,6 +20148,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18291,6 +20232,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18362,6 +20311,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18433,6 +20390,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18509,6 +20474,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18586,6 +20559,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18653,6 +20634,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18729,6 +20718,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18800,6 +20797,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18861,6 +20866,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18932,6 +20945,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -18992,6 +21013,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -19058,6 +21087,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -19118,6 +21155,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -19195,6 +21240,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -19267,6 +21320,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -19339,6 +21400,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -19415,6 +21484,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -19481,6 +21558,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -19547,6 +21632,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -19613,6 +21706,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -19674,6 +21775,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -19734,6 +21843,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -19812,6 +21929,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -19889,6 +22014,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -19960,6 +22093,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -20031,6 +22172,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -20098,6 +22247,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -20165,6 +22322,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -20242,6 +22407,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -20319,6 +22492,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -20395,6 +22576,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -20471,6 +22660,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -20544,6 +22741,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -20616,6 +22821,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -20684,6 +22897,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -20745,6 +22966,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -20823,6 +23052,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -20895,6 +23132,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -20966,6 +23211,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -21042,6 +23295,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -21114,6 +23375,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -21181,6 +23450,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -21252,6 +23529,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -21328,6 +23613,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -21405,6 +23698,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -21472,6 +23773,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -21549,6 +23858,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -21610,6 +23927,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -21687,6 +24012,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -21765,6 +24098,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -21831,6 +24172,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -21892,6 +24241,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -21968,6 +24325,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -22039,6 +24404,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -22106,6 +24479,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -22183,6 +24564,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -22259,6 +24648,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -22326,6 +24723,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -22393,6 +24798,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -22464,6 +24877,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -22524,6 +24945,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -22600,6 +25029,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -22660,6 +25097,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -22731,6 +25176,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -22807,6 +25260,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -22883,6 +25344,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -22944,6 +25413,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23021,6 +25498,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23097,6 +25582,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23163,6 +25656,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23230,6 +25731,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23291,6 +25800,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23367,6 +25884,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23433,6 +25958,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23504,6 +26037,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23564,6 +26105,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23630,6 +26179,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23707,6 +26264,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23779,6 +26344,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23846,6 +26419,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23906,6 +26487,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -23974,6 +26563,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24034,6 +26631,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24101,6 +26706,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24167,6 +26780,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24239,6 +26860,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24310,6 +26939,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24386,6 +27023,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24462,6 +27107,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24529,6 +27182,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24601,6 +27262,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24667,6 +27336,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24734,6 +27411,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24801,6 +27486,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24862,6 +27555,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24929,6 +27630,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -24989,6 +27698,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -25056,6 +27773,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -25128,6 +27853,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -25204,6 +27937,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -25276,6 +28017,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -25353,6 +28102,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -25430,6 +28187,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -25502,6 +28267,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -25578,6 +28351,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -25654,6 +28435,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -25721,6 +28510,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -25787,6 +28584,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -25865,6 +28670,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -25932,6 +28745,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 3,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -26004,6 +28825,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -26070,6 +28899,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -26142,6 +28979,14 @@ details.build-detail p {
     "vision_separate_entrance": null,
     "vision_second_kitchen": null,
     "vision_privacy_score": 1,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -26219,6 +29064,14 @@ details.build-detail p {
     "vision_separate_entrance": false,
     "vision_second_kitchen": false,
     "vision_privacy_score": 2,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": null,
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -26360,6 +29213,23 @@ function buildCard(l) {
   if (l.vision_privacy_score) vmDetails.push('privacy ' + l.vision_privacy_score + '/5');
   var vmHtml = vmClass ? '<div class="vision-multigen ' + vmClass + '">' + vmLabel + (vmDetails.length ? ' \u00b7 ' + vmDetails.join(', ') : '') + '</div>' : '';
 
+  // Garden & dining vision signals
+  var gardenSignals = [];
+  if (l.vision_garden_orientation) {
+    var orientMap = {south: '🌞 Sydvendt', north: '☁️ Nordvendt', east: '🌅 Østvendt', west: '🌇 Vestvendt'};
+    var orientLabel = orientMap[l.vision_garden_orientation] || l.vision_garden_orientation;
+    gardenSignals.push(orientLabel);
+  }
+  if (l.vision_garden_structure) {
+    gardenSignals.push(l.vision_garden_structure === 'beds' ? 'Haver med bede ✅' : 'Græsplæne');
+  }
+  if (l.vision_dining_capacity === 'large') {
+    gardenSignals.push('Spiseområde til 6+ ✅');
+  } else if (l.vision_dining_capacity === 'medium') {
+    gardenSignals.push('Spiseområde til 4-6');
+  }
+  var gardenHtml = gardenSignals.length ? '<div class="vision-garden">' + gardenSignals.join(' · ') + '</div>' : '';
+
   var trendSection = '';
   if (hasSold && l.sold[0]) {
     var chgPct = Math.round(Math.abs(l.price_dkk - l.sold[0].amount) / l.sold[0].amount * 100);
@@ -26388,8 +29258,13 @@ function buildCard(l) {
     (l.build_headroom ? '<span class="pill build-pill" title="' + l.build_note + '">🧱 +' + l.build_headroom + ' m\u00b2</span>' : '') +
     (l.energy_label ? '<span class="pill elabel-pill elabel-' + l.energy_label + '" title="Energim\u00e6rke ' + l.energy_label.toUpperCase() + '"><svg class="elabel-bolt" width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><b class="elabel-grade">' + l.energy_label.toUpperCase() + '</b></span>' : '') +
 
-    (l.monthly_expense ? '<span class="pill expense-pill" title="Månedlig ejerudgift (grundskyld + ejendomsværdiskat)">🏛 ' + Math.round(l.monthly_expense/100)*100 .toLocaleString('da-DK') + ' kr/md</span>' : '') +    '</div>' +
-    (vmHtml ? '<div class="sec">' + vmHtml + '</div>' : '') +
+    (l.monthly_expense ? '<span class="pill expense-pill" title="Månedlig ejerudgift (grundskyld + ejendomsværdiskat)">🏛 ' + Math.round(l.monthly_expense/100)*100 .toLocaleString('da-DK') + ' kr/md</span>' : '') +
+    (l.vision_parking_count >= 1 ? '<span class="pill parking-pill">🚗 ' + l.vision_parking_count + ' P</span>' : '') +
+    (l.vision_bathroom_count >= 2 ? '<span class="pill bath-pill bath-green">🛁 ' + l.vision_bathroom_count + ' bad</span>' : (l.vision_bathroom_count === 1 ? '<span class="pill bath-pill bath-amber">🛁 1 bad</span>' : '')) +
+    (l.vision_bedroom_count ? '<span class="pill">🛏 ' + l.vision_bedroom_count + ' soveværelser</span>' : '') +
+    '</div>' +
+    (l.family_score != null ? '<div class="family-score-badge ' + (l.family_score >= 70 ? 'family-score-high' : (l.family_score >= 50 ? 'family-score-mid' : 'family-score-low')) + '">🏡 Familie-score: ' + l.family_score + '/100</div>' : '') +
+    ((vmHtml || gardenHtml) ? '<div class="sec">' + vmHtml + gardenHtml + '</div>' : '') +
 
     (commuteRows ? '<div class="sec"><span class="sec-title">Pendlertid</span>' + commuteRows + '</div>' : '') +
     (hasSold ? '<div class="sec"><div class="sold-hd"><span class="sec-title">Salghistorik</span>' + trendSection +
