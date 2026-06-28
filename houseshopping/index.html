@@ -448,7 +448,7 @@ main{max-width:var(--maxw);margin:0 auto;padding:var(--sp-5) var(--sp-5) var(--s
 .conf-possible  { background: rgba(154,52,18,.95); }
 
 .pref-badge {
-  position: absolute; top: 10px; right: 10px; z-index: 2;
+  position: absolute; top: 44px; right: 10px; z-index: 2;
   display: inline-flex; align-items: center; gap: 3px;
   padding: 4px 8px;
   border-radius: 999px;
@@ -457,6 +457,19 @@ main{max-width:var(--maxw);margin:0 auto;padding:var(--sp-5) var(--sp-5) var(--s
   background: rgba(109,40,217,.95); color: #fff;
   border: 1.5px solid rgba(255,255,255,.28);
 }
+
+.noise-overlay {
+  position: absolute; top: 10px; right: 10px; z-index: 2;
+  display: inline-flex; align-items: center; gap: 3px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  border: 1.5px solid rgba(255,255,255,.28);
+}
+.noise-overlay.noisy { background: rgba(185,28,28,.88); color: #fff; }
+.noise-overlay.quiet { background: rgba(21,128,61,.88);  color: #fff; }
 
 .card-body {
   padding: 13px;
@@ -1220,7 +1233,7 @@ details.build-detail p {
 </main>
 
 <footer class="footer">
-  Generated 2026-06-27 20:46 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
+  Generated 2026-06-28 04:47 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
   Estimates (buildable headroom, AI floor-plan reads, commute times) are heuristic — verify with the kommune and the listing.
 </footer>
 <script>const listings = [
@@ -28258,9 +28271,9 @@ function buildCard(l) {
     }).join('');
   }
 
-  var noiseRow = l.noise === 'quiet'
-    ? '<div class="sig-row row-quiet"><span class="sig-label">' + I.quiet + '<span>Vejstøj</span></span><span class="sig-val v-quiet">' + (l.noise_label||'Stille') + '</span></div>'
-    : '<div class="sig-row row-noisy"><span class="sig-label">' + I.noise + '<span>Vejstøj' + (l.noise_db ? ' \u00b7 ' + l.noise_db + '\u00a0dB' : '') + '</span></span><span class="sig-val v-noisy">' + (l.noise_label||'Støj') + '</span></div>';
+  var noiseChip = l.noise === 'quiet'
+    ? '<span class="noise-overlay quiet">' + I.quiet + ' Stille</span>'
+    : '<span class="noise-overlay noisy">' + I.noise + (l.noise_db ? ' ' + l.noise_db + '\u00a0dB' : ' Støj') + '</span>';
 
   var commuteRows = '';
   if (l.commute && l.commute.length) {
@@ -28304,6 +28317,7 @@ function buildCard(l) {
   return '<div class="card-img-wrap">' +
     '<img src="' + l.preview_image + '" alt="Foto af ' + l.address + ', ' + l.city + '" width="600" height="400" loading="lazy">' +
     '<div class="conf-badge ' + conf.cls + '" role="status" aria-label="Tofamiliehus-vurdering: ' + conf.label + '">' + conf.icon + ' ' + conf.label + '</div>' +
+    noiseChip +
     (l.preferred ? '<div class="pref-badge" aria-label="Anbefalet: enkelt etage, velegnet til ældre">' + I.star + ' Én etage</div>' : '') +
     '<div class="img-price-overlay" aria-label="Salgspris: ' + fmtDKK(l.price_dkk) + '">' +
     '<div class="ipo-price">' + fmtDKK(l.price_dkk) + '</div>' +
@@ -28313,7 +28327,7 @@ function buildCard(l) {
     '<div class="card-body">' +
     '<div class="addr-row">' +
     '<h2 class="addr-line"><a href="' + l.link + '" target="_blank" rel="noopener noreferrer">' + l.address + '</a></h2>' +
-    '<p class="loc-line">' + l.city + ' \u00b7 ' + l.municipality + ' \u00b7 ' + l.type + '</p>' +
+    '<p class="loc-line">' + l.city + ' \u00b7 ' + l.type + '</p>' +
     '</div>' +
     '<div class="specs" aria-label="Nøgletal">' +
     '<span class="pill">' + I.floors + ' ' + l.floors + ' etage' + (l.floors > 1 ? 'r' : '') + '</span>' +
@@ -28334,9 +28348,7 @@ function buildCard(l) {
     '</div>' +
     '<div class="sec">' +
     '<span class="sec-title">Signaler</span>' +
-    '<div class="sig-row row-build"><span class="sig-label">' + I.build + '<span>Byggekapacitet</span></span><span class="sig-val v-build">+' + l.build_headroom + ' m\u00b2</span></div>' +
-    '<details class="build-detail"><summary>Om estimatet</summary><p>' + l.build_note + '</p></details>' +
-    noiseRow +
+    '<details class="build-detail"><summary>🧱 Byggekapacitet: +' + l.build_headroom + ' m\u00b2 — Om estimatet</summary><p>' + l.build_note + '</p></details>' +
     '</div>' +
     (commuteRows ? '<div class="sec"><span class="sec-title">Pendlertid</span>' + commuteRows + '</div>' : '') +
     (hasSold ? '<div class="sec"><div class="sold-hd"><span class="sec-title">Salghistorik</span>' + trendSection +
