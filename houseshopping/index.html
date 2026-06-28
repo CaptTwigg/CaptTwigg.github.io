@@ -183,13 +183,37 @@ a{color:var(--accent-2)}
 .field,.field-mgen,.field-label,.toggles,.tb-chips-row,.tb-ranges{display:none!important}
 
 /* Energy label pills */
-.elabel-pill{font-weight:700;font-size:0.6875rem;letter-spacing:.02em}
-.elabel-a2020,.elabel-a2015,.elabel-a2010,.elabel-a{background:#dcfce7;color:#166534;border-color:#86efac}
-.elabel-b{background:#d1fae5;color:#065f46;border-color:#6ee7b7}
-.elabel-c{background:#fef9c3;color:#854d0e;border-color:#fde047}
-.elabel-d{background:#ffedd5;color:#9a3412;border-color:#fdba74}
-.elabel-e{background:#fee2e2;color:#991b1b;border-color:#fca5a5}
-.elabel-f,.elabel-g{background:#fee2e2;color:#7f1d1d;border-color:#f87171;font-weight:800}
+.elabel-pill{font-weight:600;font-size:0.6875rem;letter-spacing:.01em;gap:4px}
+.elabel-bolt{flex-shrink:0}
+.elabel-grade{font-weight:900;font-size:0.75rem;line-height:1}
+/* A grades — deep green */
+.elabel-a2020,.elabel-a2015,.elabel-a2010,.elabel-a{background:#dcfce7;border-color:#4ade80}
+.elabel-a2020 .elabel-bolt,.elabel-a2015 .elabel-bolt,.elabel-a2010 .elabel-bolt,.elabel-a .elabel-bolt{color:#16a34a}
+.elabel-a2020 .elabel-grade,.elabel-a2015 .elabel-grade,.elabel-a2010 .elabel-grade,.elabel-a .elabel-grade{color:#14532d}
+/* B — green */
+.elabel-b{background:#f0fdf4;border-color:#86efac}
+.elabel-b .elabel-bolt{color:#22c55e}
+.elabel-b .elabel-grade{color:#166534}
+/* C — amber */
+.elabel-c{background:#fefce8;border-color:#fde047}
+.elabel-c .elabel-bolt{color:#eab308}
+.elabel-c .elabel-grade{color:#713f12}
+/* D — orange */
+.elabel-d{background:#fff7ed;border-color:#fdba74}
+.elabel-d .elabel-bolt{color:#f97316}
+.elabel-d .elabel-grade{color:#9a3412}
+/* E — red-orange */
+.elabel-e{background:#fff1f2;border-color:#fda4af}
+.elabel-e .elabel-bolt{color:#ef4444}
+.elabel-e .elabel-grade{color:#991b1b}
+/* F — red */
+.elabel-f{background:#fef2f2;border-color:#f87171}
+.elabel-f .elabel-bolt{color:#dc2626}
+.elabel-f .elabel-grade{color:#7f1d1d}
+/* G — deep red */
+.elabel-g{background:#fff0f0;border-color:#ef4444}
+.elabel-g .elabel-bolt{color:#b91c1c}
+.elabel-g .elabel-grade{color:#7f1d1d;font-size:0.8rem}
 
 /* main / grid */
 main{max-width:var(--maxw);margin:0 auto;padding:var(--sp-5) var(--sp-5) var(--sp-6)}
@@ -1374,7 +1398,7 @@ details.build-detail p {
 </main>
 
 <footer class="footer">
-  Generated 2026-06-28 08:25 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
+  Generated 2026-06-28 08:29 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
   Estimates (buildable headroom, AI floor-plan reads, commute times) are heuristic — verify with the kommune and the listing.
 </footer>
 <script>const listings = [
@@ -26004,7 +26028,7 @@ function buildCard(l) {
     '<span class="pill">' + I.year + ' ' + l.year_built + '</span>' +
     '<span class="pill">' + I.garden + ' ' + l.garden_m2 + ' m\u00b2</span>' +
     (l.build_headroom ? '<span class="pill build-pill" title="' + l.build_note + '">🧱 +' + l.build_headroom + ' m\u00b2</span>' : '') +
-    (l.energy_label ? '<span class="pill elabel-pill elabel-' + l.energy_label + '" title="Energim\u00e6rke ' + l.energy_label.toUpperCase() + '"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>' + l.energy_label.toUpperCase() + '</span>' : '') +
+    (l.energy_label ? '<span class="pill elabel-pill elabel-' + l.energy_label + '" title="Energim\u00e6rke ' + l.energy_label.toUpperCase() + '"><svg class="elabel-bolt" width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><b class="elabel-grade">' + l.energy_label.toUpperCase() + '</b></span>' : '') +
     '</div>' +
     (vmHtml ? '<div class="sec">' + vmHtml + '</div>' : '') +
 
