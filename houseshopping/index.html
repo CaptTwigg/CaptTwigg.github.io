@@ -418,7 +418,7 @@ main{max-width:var(--maxw);margin:0 auto;padding:var(--sp-5) var(--sp-5) var(--s
 
 .card-img-wrap {
   position: relative;
-  aspect-ratio: 16/9;
+  aspect-ratio: 4/3;
   background: var(--border);
   overflow: hidden; flex-shrink: 0;
 }
@@ -429,8 +429,8 @@ main{max-width:var(--maxw);margin:0 auto;padding:var(--sp-5) var(--sp-5) var(--s
 .card:hover .card-img-wrap img { transform: scale(1.04); }
 .card-img-wrap::after {
   content: ''; position: absolute; inset: 0;
-  background: linear-gradient(145deg, rgba(0,0,0,.42) 0%, transparent 55%),
-              linear-gradient(to top, rgba(0,0,0,.55) 0%, transparent 45%);
+  background: linear-gradient(145deg, rgba(0,0,0,.38) 0%, transparent 50%),
+              linear-gradient(to top, rgba(0,0,0,.72) 0%, transparent 55%);
   pointer-events: none;
 }
 
@@ -476,7 +476,6 @@ main{max-width:var(--maxw);margin:0 auto;padding:var(--sp-5) var(--sp-5) var(--s
   display: flex; flex-direction: column; flex: 1;
 }
 
-.addr-row   { padding-bottom: 8px; }
 .addr-line  {
   font-size: 0.9375rem;
   font-weight: 700; color: var(--text);
@@ -711,9 +710,18 @@ details.build-detail p {
 .img-price-overlay {
   position: absolute; bottom: 10px; left: 10px; z-index: 2;
   background: rgba(15,23,42,.82); color: #fff;
-  padding: 7px 12px; border-radius: 9px;
+  padding: 8px 12px; border-radius: 9px;
   backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);
+  max-width: calc(100% - 20px);
 }
+.ipo-addr {
+  font-size: 1rem; font-weight: 700;
+  letter-spacing: -0.02em; line-height: 1.15;
+  margin-bottom: 4px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.ipo-addr-link { color: #fff; text-decoration: none; }
+.ipo-addr-link:hover { text-decoration: underline; }
 .ipo-price {
   font-size: 1.15rem; font-weight: 700;
   letter-spacing: -0.02em; line-height: 1;
@@ -1227,7 +1235,7 @@ details.build-detail p {
 </main>
 
 <footer class="footer">
-  Generated 2026-06-28 05:18 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
+  Generated 2026-06-28 05:21 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
   Estimates (buildable headroom, AI floor-plan reads, commute times) are heuristic — verify with the kommune and the listing.
 </footer>
 <script>const listings = [
@@ -27928,15 +27936,13 @@ function buildCard(l) {
     '<div class="conf-badge ' + conf.cls + '" role="status" aria-label="Tofamiliehus-vurdering: ' + conf.label + '">' + conf.icon + ' ' + conf.label + '</div>' +
     noiseChip +
     (l.preferred ? '<div class="pref-badge" aria-label="Anbefalet: enkelt etage, velegnet til ældre">' + I.star + ' Én etage</div>' : '') +
-    '<div class="img-price-overlay" aria-label="Salgspris: ' + fmtDKK(l.price_dkk) + '">' +
+    '<div class="img-price-overlay" aria-label="' + l.address + ' · Salgspris: ' + fmtDKK(l.price_dkk) + '">' +
+    '<div class="ipo-addr"><a href="' + l.link + '" target="_blank" rel="noopener noreferrer" class="ipo-addr-link">' + l.address + '</a></div>' +
     '<div class="ipo-price">' + fmtDKK(l.price_dkk) + '</div>' +
     '<div class="ipo-m2">' + (l.area_m2 > 0 ? fmtNum(Math.round(l.price_dkk / l.area_m2)) + ' kr/m\u00b2 \u00b7 ' : '') + l.area_m2 + ' m\u00b2</div>' +
     '</div>' +
     '</div>' +
     '<div class="card-body">' +
-    '<div class="addr-row">' +
-    '<h2 class="addr-line"><a href="' + l.link + '" target="_blank" rel="noopener noreferrer">' + l.address + '</a></h2>' +
-    '</div>' +
     '<div class="specs" aria-label="Nøgletal">' +
     '<span class="pill">' + I.floors + ' ' + l.floors + ' etage' + (l.floors > 1 ? 'r' : '') + '</span>' +
     '<span class="pill">🛏 ' + l.rooms + ' rum \u00b7 ' + l.area_m2 + ' m\u00b2</span>' +
