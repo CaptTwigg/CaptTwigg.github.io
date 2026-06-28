@@ -73,61 +73,66 @@ a{color:var(--accent-2)}
 .toolbar{
   position:sticky;top:0;z-index:20;background:var(--surface);
   border-bottom:1px solid var(--border);box-shadow:var(--shadow);
-  padding:10px 16px 0;
-  /* needed so the absolute ranges panel is contained */
-  isolation:isolate;
+  padding:0;
+}
+/* inner positioned wrapper — anchor for the absolute ranges panel */
+.tb-positioner{
+  position:relative;padding:10px 16px 0;
 }
 /* Row 1: search + selects + count + reset */
 .tb-row1{
-  display:flex;align-items:center;gap:8px;padding-bottom:8px;
+  display:flex;align-items:center;gap:8px;padding-bottom:8px;flex-wrap:wrap;
 }
 .tb-search{flex:1 1 160px;min-width:0}
 .tb-search input{
-  width:100%;font:inherit;font-size:16px;padding:0 11px;height:40px;
+  width:100%;font:inherit;font-size:16px;padding:0 11px;height:44px;
   border:1px solid var(--border);border-radius:var(--radius-sm);
   background:var(--surface-2);color:var(--text);
 }
 .tb-select{
-  font:inherit;font-size:13px;padding:0 8px;height:40px;
+  font:inherit;font-size:14px;padding:0 8px;height:44px;
   border:1px solid var(--border);border-radius:var(--radius-sm);
   background:var(--surface-2);color:var(--text);cursor:pointer;
-  flex-shrink:0;max-width:140px;
+  flex-shrink:0;max-width:150px;
 }
-.tb-select-muni{max-width:160px}
-.count{font-size:12px;color:var(--muted);font-weight:600;white-space:nowrap;flex-shrink:0}
+.tb-select-muni{max-width:170px}
+.count{font-size:13px;color:var(--muted);font-weight:600;white-space:nowrap;flex-shrink:0;margin-left:auto}
 .btn-reset{
-  font:inherit;font-size:12px;font-weight:600;height:36px;padding:0 12px;cursor:pointer;flex-shrink:0;
+  font:inherit;font-size:13px;font-weight:600;height:44px;padding:0 14px;cursor:pointer;flex-shrink:0;
   border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--surface-2);color:var(--muted);
-  transition:background .12s,color .12s;
+  transition:background .12s,color .12s;touch-action:manipulation;
 }
 .btn-reset:hover{background:var(--bg);color:var(--text)}
 
-/* Row 2: horizontally scrollable chip rail */
+/* Row 2: horizontally scrollable chip rail — clipped by overflow:hidden on wrapper */
 .tb-row2{
-  position:relative;margin:0 -16px;padding:0 16px;
-  padding-bottom:8px;
+  position:relative;margin:0 -16px;
+  overflow:hidden;/* clip the fade pseudo-elements and prevent page bleed */
 }
 .tb-chip-rail{
   display:flex;align-items:center;gap:6px;
-  overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;
+  overflow-x:auto;overflow-y:hidden;
   -webkit-overflow-scrolling:touch;scrollbar-width:none;
-  white-space:nowrap;padding-bottom:2px;
+  touch-action:pan-x;
+  padding:0 16px 10px;
+  scroll-padding-left:16px;
 }
 .tb-chip-rail::-webkit-scrollbar{display:none}
-/* fade edges */
+/* fade edges — inside the overflow:hidden wrapper */
 .tb-row2::before,.tb-row2::after{
-  content:"";position:absolute;top:0;bottom:8px;width:20px;z-index:1;pointer-events:none;
+  content:"";position:absolute;top:0;bottom:0;width:24px;z-index:2;pointer-events:none;
 }
-.tb-row2::before{left:0;background:linear-gradient(to right,var(--surface),transparent)}
-.tb-row2::after{right:0;background:linear-gradient(to left,var(--surface),transparent)}
+.tb-row2::before{left:0;background:linear-gradient(to right,var(--surface) 40%,transparent)}
+.tb-row2::after{right:0;background:linear-gradient(to left,var(--surface) 40%,transparent)}
 
-/* individual chips — 44px touch target */
+/* individual chips — 44px touch target (P2 touch-target-size) */
 .chip,.fchip{
   display:inline-flex;align-items:center;gap:5px;cursor:pointer;user-select:none;
-  font:inherit;font-size:13px;font-weight:500;padding:0 13px;height:36px;min-width:44px;
-  border:1.5px solid var(--border);border-radius:999px;flex-shrink:0;scroll-snap-align:start;
-  background:var(--surface-2);color:var(--text);transition:background .12s,border-color .12s,color .12s;
-  white-space:nowrap;
+  font:inherit;font-size:13px;font-weight:500;padding:0 14px;height:44px;min-width:44px;
+  border:1.5px solid var(--border);border-radius:999px;flex-shrink:0;
+  background:var(--surface-2);color:var(--text);
+  transition:background .12s,border-color .12s,color .12s;
+  white-space:nowrap;touch-action:manipulation;
 }
 .chip input{position:absolute;opacity:0;width:1px;height:1px}
 .chip:has(input:checked),.fchip[aria-pressed=true]{
@@ -138,41 +143,43 @@ a{color:var(--accent-2)}
 
 /* chip group divider in rail */
 .tb-chip-divider{
-  width:1px;height:22px;background:var(--border);flex-shrink:0;margin:0 4px;
+  width:1px;height:22px;background:var(--border);flex-shrink:0;margin:0 2px;align-self:center;
 }
 
-/* Range panel — dropdown button + absolute panel */
+/* Range panel — dropdown anchored to .tb-positioner */
 .tb-ranges-btn{
-  font:inherit;font-size:13px;font-weight:500;padding:0 12px;height:36px;
+  font:inherit;font-size:13px;font-weight:500;padding:0 14px;height:44px;
   border:1.5px solid var(--border);border-radius:999px;flex-shrink:0;
   background:var(--surface-2);color:var(--text);cursor:pointer;
-  display:inline-flex;align-items:center;gap:5px;scroll-snap-align:start;
-  transition:background .12s,border-color .12s;
+  display:inline-flex;align-items:center;gap:6px;
+  transition:background .12s,border-color .12s;touch-action:manipulation;
+  white-space:nowrap;
 }
 .tb-ranges-btn:hover{border-color:var(--accent-2)}
 .tb-ranges-btn[aria-expanded=true]{
   background:var(--blue-bg);color:var(--blue-ink);border-color:var(--accent);
 }
 .tb-ranges-panel{
-  display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:var(--radius);box-shadow:var(--shadow-lg);
-  padding:14px 16px 10px;z-index:30;
+  display:none;position:absolute;top:100%;left:0;right:0;
+  background:var(--surface);border:1px solid var(--border);border-top:none;
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+  padding:16px 16px 12px;z-index:30;
 }
 .tb-ranges-panel.open{display:block}
 .tb-slider-grid{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:14px 24px;
+  gap:16px 24px;
 }
 .tb-ranges-close{
-  display:flex;justify-content:flex-end;margin-top:10px;
+  display:flex;justify-content:flex-end;margin-top:12px;
 }
 .tb-ranges-close button{
-  font:inherit;font-size:12px;padding:4px 12px;cursor:pointer;
+  font:inherit;font-size:13px;font-weight:500;padding:0 16px;height:36px;cursor:pointer;
   border:1px solid var(--border);border-radius:999px;background:var(--surface-2);color:var(--muted);
+  touch-action:manipulation;
 }
 
-/* hide old cruft */
+/* hide legacy cruft */
 .field,.field-mgen,.field-label,.toggles,.tb-chips-row,.tb-ranges{display:none!important}
 
 /* main / grid */
@@ -394,13 +401,15 @@ main{max-width:var(--maxw);margin:0 auto;padding:var(--sp-5) var(--sp-5) var(--s
 @media (max-width:560px){
   .header{padding:var(--sp-5) var(--sp-4) var(--sp-4)}
   main{padding:var(--sp-4)}
-  .toolbar{padding:8px 12px 0}
+  .tb-positioner{padding:8px 12px 0}
   .tb-row1{gap:6px}
-  .tb-search input{font-size:15px}  /* prevent iOS auto-zoom (must be ≥16px) */
-  .tb-select{max-width:120px;font-size:13px}
-  .count{display:none}              /* too cramped on small screens */
-  .tb-ranges-panel{left:-12px;right:-12px} /* full bleed on mobile */
+  .tb-select{max-width:110px;font-size:13px}
+  .tb-select-muni{max-width:130px}
+  .count{display:none}
+  .tb-ranges-panel{left:-12px;right:-12px}
   .tb-slider-grid{grid-template-columns:1fr;gap:12px}
+  .tb-row2{margin:0 -12px}
+  .tb-chip-rail{padding:0 12px 10px}
 }
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important;scroll-behavior:auto!important}
@@ -801,7 +810,8 @@ details.build-detail p {
   </div>
 </header>
 
-<form class="toolbar" role="search" aria-label="Filter and sort listings" style="position:relative">
+<form class="toolbar" role="search" aria-label="Filter and sort listings">
+  <div class="tb-positioner">
   <div class="tb-row1">
     <div class="tb-search">
       <input type="search" id="q" placeholder="Search address, town, zip…" autocomplete="off" aria-label="Search">
@@ -840,6 +850,7 @@ details.build-detail p {
     <div class="tb-slider-grid"><div class="rng rng-range" data-key="price" data-kind="range" data-fmt="price" data-lo="0" data-hi="12000000" data-step="250000"><div class="rng-head"><span class="rng-lab">Price (DKK)</span><output class="rng-val" id="rng-price-val" for="rng-price-min rng-price-max">any</output></div><div class="rng-track"><div class="rng-rail"></div><div class="rng-fill"></div><input type="range" class="rng-min" id="rng-price-min" min="0" max="12000000" step="250000" value="0" aria-label="Price (DKK) minimum"><input type="range" class="rng-max" id="rng-price-max" min="0" max="12000000" step="250000" value="12000000" aria-label="Price (DKK) maximum"></div></div><div class="rng rng-range" data-key="area" data-kind="range" data-fmt="area" data-lo="0" data-hi="300" data-step="10"><div class="rng-head"><span class="rng-lab">Size (m²)</span><output class="rng-val" id="rng-area-val" for="rng-area-min rng-area-max">any</output></div><div class="rng-track"><div class="rng-rail"></div><div class="rng-fill"></div><input type="range" class="rng-min" id="rng-area-min" min="0" max="300" step="10" value="0" aria-label="Size (m²) minimum"><input type="range" class="rng-max" id="rng-area-max" min="0" max="300" step="10" value="300" aria-label="Size (m²) maximum"></div></div><div class="rng rng-min" data-key="garden" data-kind="min" data-fmt="garden" data-lo="0" data-hi="45250" data-step="50"><div class="rng-head"><span class="rng-lab">Garden min (m²)</span><output class="rng-val" id="rng-garden-val" for="rng-garden-min">any</output></div><div class="rng-track"><div class="rng-rail"></div><div class="rng-fill"></div><input type="range" class="rng-min" id="rng-garden-min" min="0" max="45250" step="50" value="0" aria-label="Garden min (m²) minimum"></div></div><div class="rng rng-min" data-key="rooms" data-kind="min" data-fmt="rooms" data-lo="0" data-hi="20" data-step="1"><div class="rng-head"><span class="rng-lab">Rooms (min)</span><output class="rng-val" id="rng-rooms-val" for="rng-rooms-min">any</output></div><div class="rng-track"><div class="rng-rail"></div><div class="rng-fill"></div><input type="range" class="rng-min" id="rng-rooms-min" min="0" max="20" step="1" value="0" aria-label="Rooms (min) minimum"></div></div><div class="rng rng-range" data-key="year" data-kind="range" data-fmt="year" data-lo="1750" data-hi="2030" data-step="5"><div class="rng-head"><span class="rng-lab">Year built</span><output class="rng-val" id="rng-year-val" for="rng-year-min rng-year-max">any</output></div><div class="rng-track"><div class="rng-rail"></div><div class="rng-fill"></div><input type="range" class="rng-min" id="rng-year-min" min="1750" max="2030" step="5" value="1750" aria-label="Year built minimum"><input type="range" class="rng-max" id="rng-year-max" min="1750" max="2030" step="5" value="2030" aria-label="Year built maximum"></div></div><div class="rng rng-max" data-key="commute" data-kind="max" data-fmt="commute" data-lo="0" data-hi="60" data-step="5"><div class="rng-head"><span class="rng-lab">Commute (car)</span><output class="rng-val" id="rng-commute-val" for="rng-commute-max">any</output></div><div class="rng-track"><div class="rng-rail"></div><div class="rng-fill"></div><input type="range" class="rng-max" id="rng-commute-max" min="0" max="60" step="5" value="60" aria-label="Commute (car) maximum"></div></div><div class="rng rng-range" data-key="vprivacy" data-kind="range" data-fmt="privacy" data-lo="1" data-hi="5" data-step="1"><div class="rng-head"><span class="rng-lab">Privacy (1–5)</span><output class="rng-val" id="rng-vprivacy-val" for="rng-vprivacy-min rng-vprivacy-max">any</output></div><div class="rng-track"><div class="rng-rail"></div><div class="rng-fill"></div><input type="range" class="rng-min" id="rng-vprivacy-min" min="1" max="5" step="1" value="1" aria-label="Privacy (1–5) minimum"><input type="range" class="rng-max" id="rng-vprivacy-max" min="1" max="5" step="1" value="5" aria-label="Privacy (1–5) maximum"></div></div></div>
     <div class="tb-ranges-close"><button type="button" id="tb-ranges-close">Close ✕</button></div>
   </div>
+  </div><!-- /tb-positioner -->
 </form>
 
 <main id="main">
@@ -1208,7 +1219,7 @@ details.build-detail p {
 </main>
 
 <footer class="footer">
-  Generated 2026-06-28 06:17 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
+  Generated 2026-06-28 06:36 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
   Estimates (buildable headroom, AI floor-plan reads, commute times) are heuristic — verify with the kommune and the listing.
 </footer>
 <script>const listings = [
