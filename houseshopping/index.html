@@ -1233,7 +1233,7 @@ details.build-detail p {
 </main>
 
 <footer class="footer">
-  Generated 2026-06-28 04:47 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
+  Generated 2026-06-28 05:04 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
   Estimates (buildable headroom, AI floor-plan reads, commute times) are heuristic — verify with the kommune and the listing.
 </footer>
 <script>const listings = [
@@ -28327,13 +28327,13 @@ function buildCard(l) {
     '<div class="card-body">' +
     '<div class="addr-row">' +
     '<h2 class="addr-line"><a href="' + l.link + '" target="_blank" rel="noopener noreferrer">' + l.address + '</a></h2>' +
-    '<p class="loc-line">' + l.city + ' \u00b7 ' + l.type + '</p>' +
     '</div>' +
     '<div class="specs" aria-label="Nøgletal">' +
     '<span class="pill">' + I.floors + ' ' + l.floors + ' etage' + (l.floors > 1 ? 'r' : '') + '</span>' +
     '<span class="pill">🛏 ' + l.rooms + ' rum \u00b7 ' + l.area_m2 + ' m\u00b2</span>' +
     '<span class="pill">' + I.year + ' ' + l.year_built + '</span>' +
     '<span class="pill">' + I.garden + ' ' + l.garden_m2 + ' m\u00b2</span>' +
+    (l.build_headroom ? '<span class="pill build-pill" title="' + l.build_note + '">🧱 +' + l.build_headroom + ' m\u00b2</span>' : '') +
     '</div>' +
     '<div class="sec">' +
     '<span class="sec-title">Tofamilie-vurdering</span>' +
@@ -28348,7 +28348,6 @@ function buildCard(l) {
     '</div>' +
     '<div class="sec">' +
     '<span class="sec-title">Signaler</span>' +
-    '<details class="build-detail"><summary>🧱 Byggekapacitet: +' + l.build_headroom + ' m\u00b2 — Om estimatet</summary><p>' + l.build_note + '</p></details>' +
     '</div>' +
     (commuteRows ? '<div class="sec"><span class="sec-title">Pendlertid</span>' + commuteRows + '</div>' : '') +
     (hasSold ? '<div class="sec"><div class="sold-hd"><span class="sec-title">Salghistorik</span>' + trendSection +
