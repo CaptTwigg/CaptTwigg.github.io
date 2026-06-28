@@ -388,16 +388,15 @@ main{max-width:var(--maxw);margin:0 auto;padding:var(--sp-5) var(--sp-5) var(--s
 /* Template CSS variables (merged into existing :root above; listed here as
    comment documentation — actual vars live in the :root block) */
 
-/* Card grid: mobile-first 1-col, 2-col at 900px+ */
+/* Card grid: auto-fill, as many columns as fit */
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr));
   gap: 16px;
-  max-width: 1200px;
+  max-width: none;
   margin: 18px auto 0;
   padding: 0 16px;
 }
-@media (min-width: 900px)  { .grid { grid-template-columns: 1fr 1fr; gap: 20px; } }
 @media (max-width: 420px)  { .grid { padding: 0 10px; gap: 12px; } }
 
 /* Template card */
@@ -1235,7 +1234,7 @@ details.build-detail p {
 </main>
 
 <footer class="footer">
-  Generated 2026-06-28 05:32 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
+  Generated 2026-06-28 05:46 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
   Estimates (buildable headroom, AI floor-plan reads, commute times) are heuristic — verify with the kommune and the listing.
 </footer>
 <script>const listings = [
