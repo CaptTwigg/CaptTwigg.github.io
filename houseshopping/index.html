@@ -611,6 +611,23 @@ main{max-width:var(--maxw);margin:0 auto;padding:var(--sp-5) var(--sp-5) var(--s
   font-weight: 700; letter-spacing: 0.03em;
   color: #fff; border: 1.5px solid rgba(255,255,255,.3);
 }
+.fscore-img-badge { cursor: default; }
+.fscore-tooltip {
+  display: none;
+  position: absolute; top: calc(100% + 6px); left: 0; z-index: 20;
+  background: rgba(15,23,42,.97); color: #e2e8f0;
+  border: 1px solid rgba(255,255,255,.12); border-radius: 10px;
+  padding: 10px 12px; min-width: 200px;
+  font-size: 0.7rem; font-weight: 400; letter-spacing: 0;
+  box-shadow: 0 8px 24px rgba(0,0,0,.5);
+  pointer-events: none;
+}
+.fscore-tooltip table { border-collapse: collapse; width: 100%; }
+.fscore-tooltip td { padding: 2px 4px; white-space: nowrap; }
+.fscore-tooltip td:last-child { text-align: right; font-weight: 600; }
+.fscore-tooltip tr.total-row td { border-top: 1px solid rgba(255,255,255,.15); padding-top: 5px; font-weight: 700; color: #fff; }
+.fscore-img-badge:hover .fscore-tooltip,
+.fscore-img-badge:focus-within .fscore-tooltip { display: block; }
 .fscore-img-high { background: rgba(21,128,61,.95); }
 .fscore-img-mid  { background: rgba(146,64,14,.95); }
 .fscore-img-low  { background: rgba(154,52,18,.95); }
@@ -942,8 +959,8 @@ details.build-detail p {
 <header class="header">
   <div class="inner">
     <h1>🏡 Tofamiliehus Finder — Greater Copenhagen</h1>
-    <p class="sub">Automated multi-generational home finder · Data 2026-06-29 18:31 · <b>Price on request – 12.000.000 kr.</b></p>
-    <div class="stats"><div class="stat"><span class="num">85</span><span class="lbl">Listings</span></div><div class="stat"><span class="num">7</span><span class="lbl">Confirmed</span></div><div class="stat"><span class="num">43</span><span class="lbl">Single-floor</span></div><div class="stat"><span class="num">1</span><span class="lbl">New this run</span></div><div class="stat"><span class="num">77</span><span class="lbl">Quiet</span></div></div>
+    <p class="sub">Automated multi-generational home finder · Data 2026-06-29 19:04 · <b>Price on request – 12.000.000 kr.</b></p>
+    <div class="stats"><div class="stat"><span class="num">85</span><span class="lbl">Listings</span></div><div class="stat"><span class="num">6</span><span class="lbl">Confirmed</span></div><div class="stat"><span class="num">44</span><span class="lbl">Single-floor</span></div><div class="stat"><span class="num">1</span><span class="lbl">New this run</span></div><div class="stat"><span class="num">76</span><span class="lbl">Quiet</span></div></div>
   </div>
 </header>
 
@@ -1055,27 +1072,27 @@ details.build-detail p {
 <article class="card" data-i="3" data-conf="confirmed" data-confrank="0" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Egedal" data-price="4195000" data-area="160" data-rooms="5" data-garden="942" data-year="1965" data-floors="1" data-commute="20" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="35.4" data-expense="3830" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="måløvvej 97, 3660 stenløse egedal 3660"></article>
 <article class="card" data-i="4" data-conf="confirmed" data-confrank="0" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Roskilde" data-price="4995000" data-area="223" data-rooms="5" data-garden="1170" data-year="1877" data-floors="1" data-commute="16" data-build="extra_house" data-elabel="d" data-gorient="" data-fscore="39.9" data-expense="3680" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="store valbyvej 249, 4000 roskilde roskilde 4000"></article>
 <article class="card" data-i="5" data-conf="confirmed" data-confrank="0" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Gentofte" data-price="10995000" data-area="200" data-rooms="5" data-garden="1040" data-year="1880" data-floors="2" data-commute="20" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="38.4" data-expense="5202" data-fam="multi_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="kærvangen 41, 0, 2820 gentofte gentofte 2820"></article>
-<article class="card" data-i="6" data-conf="confirmed" data-confrank="0" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Hørsholm" data-price="10995000" data-area="219" data-rooms="5" data-garden="836" data-year="2017" data-floors="2" data-commute="34" data-build="extra_house" data-elabel="a2010" data-gorient="" data-fscore="39.9" data-expense="6289" data-fam="multi_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="kildevej 31a, 2960 rungsted kyst hørsholm 2960"></article>
-<article class="card" data-i="7" data-conf="likely" data-confrank="1" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Køge" data-price="5795000" data-area="158" data-rooms="5" data-garden="764" data-year="2005" data-floors="1" data-commute="24" data-build="expand" data-elabel="c" data-gorient="" data-fscore="30.7" data-expense="3738" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="padborgvej 22, 4600 køge køge 4600"></article>
-<article class="card" data-i="8" data-conf="likely" data-confrank="1" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Roskilde" data-price="6195000" data-area="193" data-rooms="6" data-garden="701" data-year="2013" data-floors="1" data-commute="24" data-build="extra_house" data-elabel="a2010" data-gorient="" data-fscore="38.4" data-expense="3456" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="nymarken 10, 4130 viby sjælland roskilde 4130"></article>
-<article class="card" data-i="9" data-conf="likely" data-confrank="1" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Køge" data-price="9995000" data-area="181" data-rooms="6" data-garden="56650" data-year="1936" data-floors="2" data-commute="29" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="43.9" data-expense="4494" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="ladagervej 2, 4623 lille skensved køge 4623"></article>
-<article class="card" data-i="10" data-conf="likely" data-confrank="1" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Ballerup" data-price="10995000" data-area="217" data-rooms="7" data-garden="2037" data-year="1906" data-floors="1" data-commute="18" data-build="extra_house" data-elabel="d" data-gorient="" data-fscore="43.9" data-expense="8175" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="kratvej 11, 2760 måløv ballerup 2760"></article>
-<article class="card" data-i="11" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Roskilde" data-price="2895000" data-area="176" data-rooms="6" data-garden="616" data-year="1904" data-floors="2" data-commute="28" data-build="expand" data-elabel="d" data-gorient="" data-fscore="34.4" data-expense="3028" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="kastanievej 3, 4130 viby sjælland roskilde 4130"></article>
-<article class="card" data-i="12" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Køge" data-price="4495000" data-area="265" data-rooms="6" data-garden="5771" data-year="1976" data-floors="1" data-commute="32" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="46.9" data-expense="3618" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lidemarksvej 51a, 4681 herfølge køge 4681"></article>
-<article class="card" data-i="13" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Lejre" data-price="4745000" data-area="251" data-rooms="6" data-garden="852" data-year="2020" data-floors="1" data-commute="29" data-build="none" data-elabel="a2010" data-gorient="" data-fscore="44.9" data-expense="3388" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="karlebyvej 208, 4070 kirke hyllinge lejre 4070"></article>
-<article class="card" data-i="14" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="noisy" data-vision="0" data-muni="Høje-Taastrup" data-price="4995000" data-area="212" data-rooms="6" data-garden="792" data-year="1918" data-floors="2" data-commute="5" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="32.5" data-expense="4393" data-fam="multi_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="klovtoftegade 2, 2630 taastrup høje-taastrup 2630"></article>
-<article class="card" data-i="15" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Allerød" data-price="5500000" data-area="233" data-rooms="7" data-garden="810" data-year="1969" data-floors="2" data-commute="31" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="43.6" data-expense="4126" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="tjørnebakken 2, 3540 lynge allerød 3540"></article>
-<article class="card" data-i="16" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Roskilde" data-price="7495000" data-area="201" data-rooms="8" data-garden="740" data-year="1920" data-floors="2" data-commute="13" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="41.3" data-expense="5460" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="plantagen 3, 4000 roskilde roskilde 4000"></article>
-<article class="card" data-i="17" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="noisy" data-vision="0" data-muni="København" data-price="7995000" data-area="183" data-rooms="8" data-garden="611" data-year="1930" data-floors="3" data-commute="15" data-build="expand" data-elabel="d" data-gorient="" data-fscore="34.4" data-expense="4392" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="krogebjerg 1, 2720 vanløse københavn 2720"></article>
-<article class="card" data-i="18" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Lejre" data-price="8500000" data-area="249" data-rooms="8" data-garden="1563" data-year="1948" data-floors="2" data-commute="22" data-build="extra_house" data-elabel="a2020" data-gorient="" data-fscore="53.0" data-expense="5135" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="kongemarksvej 90, 4000 roskilde lejre 4000"></article>
+<article class="card" data-i="6" data-conf="likely" data-confrank="1" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Køge" data-price="5795000" data-area="158" data-rooms="5" data-garden="764" data-year="2005" data-floors="1" data-commute="24" data-build="expand" data-elabel="c" data-gorient="" data-fscore="30.7" data-expense="3738" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="padborgvej 22, 4600 køge køge 4600"></article>
+<article class="card" data-i="7" data-conf="likely" data-confrank="1" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Roskilde" data-price="6195000" data-area="193" data-rooms="6" data-garden="701" data-year="2013" data-floors="1" data-commute="24" data-build="extra_house" data-elabel="a2010" data-gorient="" data-fscore="38.4" data-expense="3456" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="nymarken 10, 4130 viby sjælland roskilde 4130"></article>
+<article class="card" data-i="8" data-conf="likely" data-confrank="1" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Køge" data-price="9995000" data-area="181" data-rooms="6" data-garden="56650" data-year="1936" data-floors="2" data-commute="29" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="43.9" data-expense="4494" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="ladagervej 2, 4623 lille skensved køge 4623"></article>
+<article class="card" data-i="9" data-conf="likely" data-confrank="1" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Ballerup" data-price="10995000" data-area="217" data-rooms="7" data-garden="2037" data-year="1906" data-floors="1" data-commute="18" data-build="extra_house" data-elabel="d" data-gorient="" data-fscore="43.9" data-expense="8175" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="kratvej 11, 2760 måløv ballerup 2760"></article>
+<article class="card" data-i="10" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Køge" data-price="4495000" data-area="265" data-rooms="6" data-garden="5771" data-year="1976" data-floors="1" data-commute="32" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="46.9" data-expense="3618" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lidemarksvej 51a, 4681 herfølge køge 4681"></article>
+<article class="card" data-i="11" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Allerød" data-price="5500000" data-area="233" data-rooms="7" data-garden="810" data-year="1969" data-floors="2" data-commute="31" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="43.6" data-expense="4126" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="tjørnebakken 2, 3540 lynge allerød 3540"></article>
+<article class="card" data-i="12" data-conf="likely" data-confrank="1" data-preferred="0" data-new="1" data-noise="quiet" data-vision="0" data-muni="Ballerup" data-price="5750000" data-area="166" data-rooms="6" data-garden="983" data-year="1998" data-floors="3" data-commute="12" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="38.4" data-expense="4558" data-fam="multi_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="vestermarken 2b, 2750 ballerup ballerup 2750"></article>
+<article class="card" data-i="13" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Roskilde" data-price="7495000" data-area="201" data-rooms="8" data-garden="740" data-year="1920" data-floors="2" data-commute="13" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="41.3" data-expense="5460" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="plantagen 3, 4000 roskilde roskilde 4000"></article>
+<article class="card" data-i="14" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="noisy" data-vision="0" data-muni="København" data-price="7995000" data-area="216" data-rooms="9" data-garden="590" data-year="2011" data-floors="2" data-commute="11" data-build="none" data-elabel="a2010" data-gorient="" data-fscore="34.3" data-expense="5486" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="vejlands allé 124, 2300 københavn s københavn 2300"></article>
+<article class="card" data-i="15" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="noisy" data-vision="0" data-muni="København" data-price="7995000" data-area="183" data-rooms="8" data-garden="611" data-year="1930" data-floors="3" data-commute="15" data-build="expand" data-elabel="d" data-gorient="" data-fscore="34.4" data-expense="4392" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="krogebjerg 1, 2720 vanløse københavn 2720"></article>
+<article class="card" data-i="16" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="noisy" data-vision="1" data-muni="Rudersdal" data-price="8250000" data-area="239" data-rooms="5" data-garden="1368" data-year="1978" data-floors="2" data-commute="26" data-build="extra_house" data-elabel="d" data-gorient="" data-fscore="38.1" data-expense="5021" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="vejdammen 54, 2840 holte rudersdal 2840"></article>
+<article class="card" data-i="17" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Lejre" data-price="8500000" data-area="249" data-rooms="8" data-garden="1563" data-year="1948" data-floors="2" data-commute="22" data-build="extra_house" data-elabel="a2020" data-gorient="" data-fscore="53.0" data-expense="5135" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="kongemarksvej 90, 4000 roskilde lejre 4000"></article>
+<article class="card" data-i="18" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="København" data-price="8995000" data-area="157" data-rooms="6" data-garden="613" data-year="1937" data-floors="3" data-commute="15" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="33.7" data-expense="5879" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="vesterløkken 6a, 2700 brønshøj københavn 2700"></article>
 <article class="card" data-i="19" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Gladsaxe" data-price="8995000" data-area="205" data-rooms="6" data-garden="982" data-year="1971" data-floors="1" data-commute="18" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="41.1" data-expense="5792" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="thorbjørnsvej 15, 2880 bagsværd gladsaxe 2880"></article>
-<article class="card" data-i="20" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Rudersdal" data-price="10995000" data-area="171" data-rooms="6" data-garden="1200" data-year="1984" data-floors="1" data-commute="23" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="41.7" data-expense="9166" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lyngdalen 22, 2850 nærum rudersdal 2850"></article>
-<article class="card" data-i="21" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Rudersdal" data-price="11795000" data-area="166" data-rooms="4" data-garden="1025" data-year="1956" data-floors="1" data-commute="28" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="33.1" data-expense="6141" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="skovringen 16, 2950 vedbæk rudersdal 2950"></article>
-<article class="card" data-i="22" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Lejre" data-price="2745000" data-area="180" data-rooms="9" data-garden="1115" data-year="1968" data-floors="1" data-commute="30" data-build="extra_house" data-elabel="d" data-gorient="" data-fscore="43.1" data-expense="2524" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lorentzensvej 3, 4070 kirke hyllinge lejre 4070"></article>
-<article class="card" data-i="23" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Køge" data-price="4495000" data-area="193" data-rooms="5" data-garden="967" data-year="1977" data-floors="1" data-commute="29" data-build="extra_house" data-elabel="d" data-gorient="" data-fscore="36.8" data-expense="3210" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="stenbukvej 16, 4623 lille skensved køge 4623"></article>
-<article class="card" data-i="24" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Egedal" data-price="4595000" data-area="150" data-rooms="5" data-garden="889" data-year="1970" data-floors="1" data-commute="30" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="34.1" data-expense="3743" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="maglehøjvej 11, 3650 ølstykke egedal 3650"></article>
-<article class="card" data-i="25" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="noisy" data-vision="1" data-muni="Høje-Taastrup" data-price="5385000" data-area="189" data-rooms="6" data-garden="783" data-year="1966" data-floors="1" data-commute="8" data-build="expand" data-elabel="c" data-gorient="" data-fscore="31.5" data-expense="3569" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="stubholmen 1, 2630 taastrup høje-taastrup 2630"></article>
-<article class="card" data-i="26" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Køge" data-price="5595000" data-area="194" data-rooms="5" data-garden="800" data-year="2023" data-floors="1" data-commute="31" data-build="expand" data-elabel="a2015" data-gorient="" data-fscore="39.4" data-expense="3413" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="kildebjergs agre 70, 4632 bjæverskov køge 4632"></article>
+<article class="card" data-i="20" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="København" data-price="9800000" data-area="178" data-rooms="5" data-garden="590" data-year="1940" data-floors="2" data-commute="13" data-build="expand" data-elabel="f" data-gorient="" data-fscore="28.4" data-expense="4918" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="vejlands allé 22, 2300 københavn s københavn 2300"></article>
+<article class="card" data-i="21" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Rudersdal" data-price="10995000" data-area="171" data-rooms="6" data-garden="1200" data-year="1984" data-floors="1" data-commute="23" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="41.7" data-expense="9166" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lyngdalen 22, 2850 nærum rudersdal 2850"></article>
+<article class="card" data-i="22" data-conf="likely" data-confrank="1" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Rudersdal" data-price="11795000" data-area="166" data-rooms="4" data-garden="1025" data-year="1956" data-floors="1" data-commute="28" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="33.1" data-expense="6141" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="skovringen 16, 2950 vedbæk rudersdal 2950"></article>
+<article class="card" data-i="23" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Lejre" data-price="2745000" data-area="180" data-rooms="9" data-garden="1115" data-year="1968" data-floors="1" data-commute="30" data-build="extra_house" data-elabel="d" data-gorient="" data-fscore="43.1" data-expense="2524" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lorentzensvej 3, 4070 kirke hyllinge lejre 4070"></article>
+<article class="card" data-i="24" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Køge" data-price="4495000" data-area="193" data-rooms="5" data-garden="967" data-year="1977" data-floors="1" data-commute="29" data-build="extra_house" data-elabel="d" data-gorient="" data-fscore="36.8" data-expense="3210" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="stenbukvej 16, 4623 lille skensved køge 4623"></article>
+<article class="card" data-i="25" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Egedal" data-price="4595000" data-area="150" data-rooms="5" data-garden="889" data-year="1970" data-floors="1" data-commute="30" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="34.1" data-expense="3743" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="maglehøjvej 11, 3650 ølstykke egedal 3650"></article>
+<article class="card" data-i="26" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="noisy" data-vision="1" data-muni="Høje-Taastrup" data-price="5385000" data-area="189" data-rooms="6" data-garden="783" data-year="1966" data-floors="1" data-commute="8" data-build="expand" data-elabel="c" data-gorient="" data-fscore="31.5" data-expense="3569" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="stubholmen 1, 2630 taastrup høje-taastrup 2630"></article>
 <article class="card" data-i="27" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Roskilde" data-price="5695000" data-area="198" data-rooms="6" data-garden="855" data-year="1970" data-floors="1" data-commute="19" data-build="expand" data-elabel="d" data-gorient="" data-fscore="39.6" data-expense="4062" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="søparken 28, 4000 roskilde roskilde 4000"></article>
 <article class="card" data-i="28" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Køge" data-price="5775000" data-area="172" data-rooms="6" data-garden="1010" data-year="2007" data-floors="1" data-commute="29" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="38.3" data-expense="3224" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="mejsevænget 7, 4623 lille skensved køge 4623"></article>
 <article class="card" data-i="29" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Solrød" data-price="5845000" data-area="162" data-rooms="6" data-garden="782" data-year="1968" data-floors="1" data-commute="19" data-build="expand" data-elabel="c" data-gorient="" data-fscore="34.9" data-expense="3970" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="solrød strandvej 42, 2680 solrød strand solrød 2680"></article>
@@ -1084,49 +1101,49 @@ details.build-detail p {
 <article class="card" data-i="32" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Køge" data-price="5995000" data-area="169" data-rooms="6" data-garden="646" data-year="2005" data-floors="1" data-commute="24" data-build="none" data-elabel="b" data-gorient="" data-fscore="35.5" data-expense="3611" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="padborgvej 2, 4600 køge køge 4600"></article>
 <article class="card" data-i="33" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="noisy" data-vision="1" data-muni="Solrød" data-price="5998000" data-area="185" data-rooms="7" data-garden="831" data-year="1970" data-floors="1" data-commute="20" data-build="expand" data-elabel="c" data-gorient="" data-fscore="34.9" data-expense="3582" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="rismarken 1, 2680 solrød strand solrød 2680"></article>
 <article class="card" data-i="34" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Solrød" data-price="6295000" data-area="175" data-rooms="5" data-garden="800" data-year="2024" data-floors="1" data-commute="23" data-build="expand" data-elabel="a2020" data-gorient="" data-fscore="38.0" data-expense="4099" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="skovvej 6, 4622 havdrup solrød 4622"></article>
-<article class="card" data-i="35" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Furesø" data-price="6495000" data-area="161" data-rooms="6" data-garden="823" data-year="1968" data-floors="1" data-commute="23" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="38.3" data-expense="4881" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="ryttervænget 14, 3520 farum furesø 3520"></article>
-<article class="card" data-i="36" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Greve" data-price="6495000" data-area="151" data-rooms="4" data-garden="530" data-year="2027" data-floors="1" data-commute="14" data-build="none" data-elabel="" data-gorient="" data-fscore="24.6" data-expense="4217" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="hundige strandvej 25a, 2670 greve greve 2670"></article>
-<article class="card" data-i="37" data-conf="possible" data-confrank="2" data-preferred="1" data-new="1" data-noise="quiet" data-vision="1" data-muni="Greve" data-price="6695000" data-area="163" data-rooms="5" data-garden="753" data-year="2016" data-floors="1" data-commute="15" data-build="expand" data-elabel="a2020" data-gorient="" data-fscore="34.6" data-expense="3906" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="tunegårdsvænget 35, 4030 tune greve 4030"></article>
+<article class="card" data-i="35" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Greve" data-price="6495000" data-area="151" data-rooms="4" data-garden="530" data-year="2027" data-floors="1" data-commute="14" data-build="none" data-elabel="" data-gorient="" data-fscore="24.6" data-expense="4217" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="hundige strandvej 25a, 2670 greve greve 2670"></article>
+<article class="card" data-i="36" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Furesø" data-price="6495000" data-area="161" data-rooms="6" data-garden="823" data-year="1968" data-floors="1" data-commute="23" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="38.3" data-expense="4881" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="ryttervænget 14, 3520 farum furesø 3520"></article>
+<article class="card" data-i="37" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Greve" data-price="6695000" data-area="163" data-rooms="5" data-garden="753" data-year="2016" data-floors="1" data-commute="15" data-build="expand" data-elabel="a2020" data-gorient="" data-fscore="34.6" data-expense="3906" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="tunegårdsvænget 35, 4030 tune greve 4030"></article>
 <article class="card" data-i="38" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Køge" data-price="6995000" data-area="192" data-rooms="5" data-garden="811" data-year="1949" data-floors="1" data-commute="24" data-build="expand" data-elabel="a2010" data-gorient="" data-fscore="38.9" data-expense="2203" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="strandlodsvej 36, 4600 køge køge 4600"></article>
-<article class="card" data-i="39" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Rødovre" data-price="7195000" data-area="152" data-rooms="6" data-garden="798" data-year="1964" data-floors="1" data-commute="17" data-build="extra_house" data-elabel="d" data-gorient="" data-fscore="32.9" data-expense="4550" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="krarupvej 39, 2610 rødovre rødovre 2610"></article>
-<article class="card" data-i="40" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Greve" data-price="7495000" data-area="151" data-rooms="4" data-garden="531" data-year="2027" data-floors="1" data-commute="14" data-build="none" data-elabel="" data-gorient="" data-fscore="24.6" data-expense="4557" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="hundige strandvej 25b, 2670 greve greve 2670"></article>
-<article class="card" data-i="41" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Roskilde" data-price="7995000" data-area="294" data-rooms="20" data-garden="45208" data-year="1962" data-floors="1" data-commute="18" data-build="extra_house" data-elabel="e" data-gorient="" data-fscore="49.6" data-expense="8760" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="roskildevej 79, 4030 tune roskilde 4030"></article>
-<article class="card" data-i="42" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Køge" data-price="7995000" data-area="186" data-rooms="5" data-garden="775" data-year="2005" data-floors="1" data-commute="24" data-build="expand" data-elabel="c" data-gorient="" data-fscore="34.0" data-expense="3844" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="padborgvej 20, 4600 køge køge 4600"></article>
-<article class="card" data-i="43" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Egedal" data-price="8395000" data-area="167" data-rooms="4" data-garden="931" data-year="2021" data-floors="1" data-commute="16" data-build="extra_house" data-elabel="a2020" data-gorient="" data-fscore="35.7" data-expense="4735" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="smørum bygade 43, 2765 smørum egedal 2765"></article>
-<article class="card" data-i="44" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Glostrup" data-price="8695000" data-area="181" data-rooms="5" data-garden="737" data-year="2002" data-floors="1" data-commute="11" data-build="expand" data-elabel="b" data-gorient="" data-fscore="34.6" data-expense="4865" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="rønkrogen 7, 2600 glostrup glostrup 2600"></article>
-<article class="card" data-i="45" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Vallensbæk" data-price="8695000" data-area="204" data-rooms="5" data-garden="1120" data-year="1969" data-floors="1" data-commute="7" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="38.3" data-expense="5505" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lerchenborgvej 4, 2665 vallensbæk strand vallensbæk 2665"></article>
-<article class="card" data-i="46" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Dragør" data-price="8995000" data-area="187" data-rooms="4" data-garden="700" data-year="1962" data-floors="1" data-commute="19" data-build="none" data-elabel="c" data-gorient="" data-fscore="31.7" data-expense="5973" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="stenbakken 12, 2791 dragør dragør 2791"></article>
-<article class="card" data-i="47" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Høje-Taastrup" data-price="8995000" data-area="236" data-rooms="8" data-garden="788" data-year="2023" data-floors="1" data-commute="5" data-build="none" data-elabel="a2015" data-gorient="" data-fscore="45.4" data-expense="4623" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="rugkærgårdsvej 43, 2630 taastrup høje-taastrup 2630"></article>
-<article class="card" data-i="48" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Dragør" data-price="8995000" data-area="186" data-rooms="7" data-garden="874" data-year="1982" data-floors="1" data-commute="19" data-build="expand" data-elabel="c" data-gorient="" data-fscore="40.3" data-expense="6652" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="ndr strandvej 23, 2791 dragør dragør 2791"></article>
-<article class="card" data-i="49" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Greve" data-price="8995000" data-area="267" data-rooms="6" data-garden="1328" data-year="1995" data-floors="1" data-commute="14" data-build="extra_house" data-elabel="a2010" data-gorient="" data-fscore="48.4" data-expense="5245" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="metavang 12, 2670 greve greve 2670"></article>
-<article class="card" data-i="50" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Roskilde" data-price="9200000" data-area="240" data-rooms="5" data-garden="830" data-year="2022" data-floors="1" data-commute="17" data-build="none" data-elabel="a2015" data-gorient="" data-fscore="42.5" data-expense="5519" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="margrethekær 11, 4000 roskilde roskilde 4000"></article>
-<article class="card" data-i="51" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Hvidovre" data-price="9250000" data-area="150" data-rooms="5" data-garden="530" data-year="2019" data-floors="1" data-commute="6" data-build="none" data-elabel="a2015" data-gorient="" data-fscore="29.5" data-expense="5244" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="strøbyvej 11b, 2650 hvidovre hvidovre 2650"></article>
-<article class="card" data-i="52" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Glostrup" data-price="10495000" data-area="180" data-rooms="5" data-garden="848" data-year="2020" data-floors="1" data-commute="10" data-build="expand" data-elabel="a2015" data-gorient="" data-fscore="39.4" data-expense="5984" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="sofielundsvej 33, 2600 glostrup glostrup 2600"></article>
-<article class="card" data-i="53" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Solrød" data-price="10495000" data-area="182" data-rooms="5" data-garden="788" data-year="2011" data-floors="1" data-commute="18" data-build="expand" data-elabel="b" data-gorient="" data-fscore="34.6" data-expense="5889" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="skovparken 12, 2680 solrød strand solrød 2680"></article>
-<article class="card" data-i="54" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Hørsholm" data-price="10950000" data-area="223" data-rooms="7" data-garden="1227" data-year="1977" data-floors="1" data-commute="33" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="46.9" data-expense="7440" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lærkevænget 14, 2970 hørsholm hørsholm 2970"></article>
-<article class="card" data-i="55" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Hørsholm" data-price="10995000" data-area="239" data-rooms="7" data-garden="980" data-year="1971" data-floors="1" data-commute="32" data-build="expand" data-elabel="d" data-gorient="" data-fscore="42.8" data-expense="7342" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="søvang 30, 2970 hørsholm hørsholm 2970"></article>
-<article class="card" data-i="56" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Rudersdal" data-price="10995000" data-area="167" data-rooms="5" data-garden="1970" data-year="1922" data-floors="1" data-commute="26" data-build="extra_house" data-elabel="d" data-gorient="" data-fscore="38.2" data-expense="8465" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="birkebakken 20a, 2840 holte rudersdal 2840"></article>
-<article class="card" data-i="57" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Tårnby" data-price="11750000" data-area="185" data-rooms="6" data-garden="683" data-year="2023" data-floors="1" data-commute="14" data-build="none" data-elabel="a2020" data-gorient="" data-fscore="39.4" data-expense="3941" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="moselundvej 28, 2770 kastrup tårnby 2770"></article>
-<article class="card" data-i="58" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Hørsholm" data-price="11995000" data-area="181" data-rooms="5" data-garden="842" data-year="2015" data-floors="1" data-commute="31" data-build="expand" data-elabel="a2010" data-gorient="" data-fscore="38.9" data-expense="7320" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="parkvej 5, 2960 rungsted kyst hørsholm 2960"></article>
-<article class="card" data-i="59" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Lejre" data-price="2499000" data-area="184" data-rooms="7" data-garden="626" data-year="2008" data-floors="2" data-commute="25" data-build="none" data-elabel="b" data-gorient="" data-fscore="37.6" data-expense="2371" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="rye gade 4, 4060 kirke såby lejre 4060"></article>
-<article class="card" data-i="60" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Solrød" data-price="3550000" data-area="242" data-rooms="6" data-garden="1047" data-year="1920" data-floors="2" data-commute="22" data-build="expand" data-elabel="c" data-gorient="" data-fscore="43.6" data-expense="4116" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="naurbjergvej 16, 4623 lille skensved solrød 4623"></article>
-<article class="card" data-i="61" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Egedal" data-price="3695000" data-area="150" data-rooms="3" data-garden="951" data-year="1951" data-floors="2" data-commute="22" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="29.1" data-expense="2981" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="måløvvej 30a, 3660 stenløse egedal 3660"></article>
-<article class="card" data-i="62" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Egedal" data-price="5695000" data-area="160" data-rooms="6" data-garden="820" data-year="1965" data-floors="2" data-commute="30" data-build="extra_house" data-elabel="d" data-gorient="" data-fscore="37.8" data-expense="4113" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="johannedalsvej 31, 3650 ølstykke egedal 3650"></article>
-<article class="card" data-i="63" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="noisy" data-vision="1" data-muni="Høje-Taastrup" data-price="5995000" data-area="199" data-rooms="5" data-garden="1200" data-year="1976" data-floors="1" data-commute="5" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="35.5" data-expense="4015" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="roskildevej 321a, 2630 taastrup høje-taastrup 2630"></article>
-<article class="card" data-i="64" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Gladsaxe" data-price="6150000" data-area="158" data-rooms="5" data-garden="591" data-year="1930" data-floors="2" data-commute="15" data-build="none" data-elabel="c" data-gorient="" data-fscore="27.7" data-expense="4204" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lillegårds alle 17, 2860 søborg gladsaxe 2860"></article>
-<article class="card" data-i="65" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Tårnby" data-price="6495000" data-area="157" data-rooms="4" data-garden="540" data-year="1977" data-floors="2" data-commute="15" data-build="none" data-elabel="c" data-gorient="" data-fscore="25.4" data-expense="4054" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="tømmerupvang 64, 2770 kastrup tårnby 2770"></article>
-<article class="card" data-i="66" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Ishøj" data-price="6495000" data-area="203" data-rooms="5" data-garden="1128" data-year="1919" data-floors="3" data-commute="6" data-build="extra_house" data-elabel="b" data-gorient="" data-fscore="39.1" data-expense="3704" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="køgevej 285, 2635 ishøj ishøj 2635"></article>
-<article class="card" data-i="67" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Lejre" data-price="6499000" data-area="241" data-rooms="8" data-garden="56817" data-year="1890" data-floors="2" data-commute="30" data-build="extra_house" data-elabel="e" data-gorient="" data-fscore="49.8" data-expense="4026" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="kirkeskovvej 2, 4330 hvalsø lejre 4330"></article>
-<article class="card" data-i="68" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Solrød" data-price="6995000" data-area="216" data-rooms="7" data-garden="854" data-year="1968" data-floors="2" data-commute="20" data-build="expand" data-elabel="a2010" data-gorient="" data-fscore="42.8" data-expense="3939" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lærkevænget 8, 2680 solrød strand solrød 2680"></article>
-<article class="card" data-i="69" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Køge" data-price="7495000" data-area="155" data-rooms="7" data-garden="603" data-year="1934" data-floors="2" data-commute="26" data-build="none" data-elabel="f" data-gorient="" data-fscore="33.1" data-expense="5108" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="tøxensvej 29, 4600 køge køge 4600"></article>
-<article class="card" data-i="70" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Dragør" data-price="7495000" data-area="221" data-rooms="6" data-garden="1050" data-year="1974" data-floors="1" data-commute="20" data-build="extra_house" data-elabel="b" data-gorient="" data-fscore="44.1" data-expense="4809" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="søvej 6, 2791 dragør dragør 2791"></article>
-<article class="card" data-i="71" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Tårnby" data-price="7495000" data-area="190" data-rooms="8" data-garden="782" data-year="1964" data-floors="2" data-commute="13" data-build="expand" data-elabel="c" data-gorient="" data-fscore="40.4" data-expense="4712" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="majbøl alle 1, 2770 kastrup tårnby 2770"></article>
-<article class="card" data-i="72" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Solrød" data-price="7645000" data-area="180" data-rooms="5" data-garden="591" data-year="1970" data-floors="2" data-commute="20" data-build="none" data-elabel="c" data-gorient="" data-fscore="31.0" data-expense="4416" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lærkevej 12, 2680 solrød strand solrød 2680"></article>
-<article class="card" data-i="73" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="noisy" data-vision="1" data-muni="Gladsaxe" data-price="7800000" data-area="232" data-rooms="6" data-garden="1552" data-year="1968" data-floors="1" data-commute="18" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="41.5" data-expense="5893" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="skovsøen 46, 2880 bagsværd gladsaxe 2880"></article>
-<article class="card" data-i="74" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Furesø" data-price="7995000" data-area="183" data-rooms="5" data-garden="1232" data-year="1965" data-floors="2" data-commute="23" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="41.0" data-expense="6151" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="toftegårdsvej 19, 3520 farum furesø 3520"></article>
-<article class="card" data-i="75" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="noisy" data-vision="1" data-muni="Roskilde" data-price="7995000" data-area="188" data-rooms="5" data-garden="766" data-year="1959" data-floors="1" data-commute="14" data-build="expand" data-elabel="b" data-gorient="" data-fscore="29.3" data-expense="3535" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="svanevej 59, 4000 roskilde roskilde 4000"></article>
-<article class="card" data-i="76" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Rudersdal" data-price="7995000" data-area="177" data-rooms="7" data-garden="743" data-year="1964" data-floors="2" data-commute="31" data-build="expand" data-elabel="a2010" data-gorient="" data-fscore="36.5" data-expense="6519" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="biskop svanes vej 45a, 3460 birkerød rudersdal 3460"></article>
-<article class="card" data-i="77" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Greve" data-price="8475000" data-area="198" data-rooms="4" data-garden="655" data-year="2024" data-floors="2" data-commute="16" data-build="none" data-elabel="a2015" data-gorient="" data-fscore="33.8" data-expense="5190" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="klitvej 1a, 2690 karlslunde greve 2690"></article>
+<article class="card" data-i="39" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Glostrup" data-price="7195000" data-area="186" data-rooms="7" data-garden="743" data-year="1958" data-floors="1" data-commute="12" data-build="none" data-elabel="d" data-gorient="" data-fscore="36.2" data-expense="4930" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="vagtelvænget 24, 2600 glostrup glostrup 2600"></article>
+<article class="card" data-i="40" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Rødovre" data-price="7195000" data-area="152" data-rooms="6" data-garden="798" data-year="1964" data-floors="1" data-commute="17" data-build="extra_house" data-elabel="d" data-gorient="" data-fscore="32.9" data-expense="4550" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="krarupvej 39, 2610 rødovre rødovre 2610"></article>
+<article class="card" data-i="41" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Greve" data-price="7495000" data-area="151" data-rooms="4" data-garden="531" data-year="2027" data-floors="1" data-commute="14" data-build="none" data-elabel="" data-gorient="" data-fscore="24.6" data-expense="4557" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="hundige strandvej 25b, 2670 greve greve 2670"></article>
+<article class="card" data-i="42" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Roskilde" data-price="7995000" data-area="294" data-rooms="20" data-garden="45208" data-year="1962" data-floors="1" data-commute="18" data-build="extra_house" data-elabel="e" data-gorient="" data-fscore="49.6" data-expense="8760" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="roskildevej 79, 4030 tune roskilde 4030"></article>
+<article class="card" data-i="43" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Køge" data-price="7995000" data-area="186" data-rooms="5" data-garden="775" data-year="2005" data-floors="1" data-commute="24" data-build="expand" data-elabel="c" data-gorient="" data-fscore="34.0" data-expense="3844" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="padborgvej 20, 4600 køge køge 4600"></article>
+<article class="card" data-i="44" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Egedal" data-price="8395000" data-area="167" data-rooms="4" data-garden="931" data-year="2021" data-floors="1" data-commute="16" data-build="extra_house" data-elabel="a2020" data-gorient="" data-fscore="35.7" data-expense="4735" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="smørum bygade 43, 2765 smørum egedal 2765"></article>
+<article class="card" data-i="45" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Greve" data-price="8495000" data-area="236" data-rooms="5" data-garden="1490" data-year="1973" data-floors="1" data-commute="17" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="44.0" data-expense="4654" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="vildmosevej 4, 2690 karlslunde greve 2690"></article>
+<article class="card" data-i="46" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Glostrup" data-price="8695000" data-area="181" data-rooms="5" data-garden="737" data-year="2002" data-floors="1" data-commute="11" data-build="expand" data-elabel="b" data-gorient="" data-fscore="34.6" data-expense="4865" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="rønkrogen 7, 2600 glostrup glostrup 2600"></article>
+<article class="card" data-i="47" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Vallensbæk" data-price="8695000" data-area="204" data-rooms="5" data-garden="1120" data-year="1969" data-floors="1" data-commute="7" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="38.3" data-expense="5505" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lerchenborgvej 4, 2665 vallensbæk strand vallensbæk 2665"></article>
+<article class="card" data-i="48" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Dragør" data-price="8995000" data-area="187" data-rooms="4" data-garden="700" data-year="1962" data-floors="1" data-commute="19" data-build="none" data-elabel="c" data-gorient="" data-fscore="31.7" data-expense="5973" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="stenbakken 12, 2791 dragør dragør 2791"></article>
+<article class="card" data-i="49" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Høje-Taastrup" data-price="8995000" data-area="236" data-rooms="8" data-garden="788" data-year="2023" data-floors="1" data-commute="5" data-build="none" data-elabel="a2015" data-gorient="" data-fscore="45.4" data-expense="4623" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="rugkærgårdsvej 43, 2630 taastrup høje-taastrup 2630"></article>
+<article class="card" data-i="50" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Dragør" data-price="8995000" data-area="186" data-rooms="7" data-garden="874" data-year="1982" data-floors="1" data-commute="19" data-build="expand" data-elabel="c" data-gorient="" data-fscore="40.3" data-expense="6652" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="ndr strandvej 23, 2791 dragør dragør 2791"></article>
+<article class="card" data-i="51" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Greve" data-price="8995000" data-area="267" data-rooms="6" data-garden="1328" data-year="1995" data-floors="1" data-commute="14" data-build="extra_house" data-elabel="a2010" data-gorient="" data-fscore="48.4" data-expense="5245" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="metavang 12, 2670 greve greve 2670"></article>
+<article class="card" data-i="52" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Roskilde" data-price="9200000" data-area="240" data-rooms="5" data-garden="830" data-year="2022" data-floors="1" data-commute="17" data-build="none" data-elabel="a2015" data-gorient="" data-fscore="42.5" data-expense="5519" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="margrethekær 11, 4000 roskilde roskilde 4000"></article>
+<article class="card" data-i="53" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Hvidovre" data-price="9250000" data-area="150" data-rooms="5" data-garden="530" data-year="2019" data-floors="1" data-commute="6" data-build="none" data-elabel="a2015" data-gorient="" data-fscore="29.5" data-expense="5244" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="strøbyvej 11b, 2650 hvidovre hvidovre 2650"></article>
+<article class="card" data-i="54" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Glostrup" data-price="10495000" data-area="180" data-rooms="5" data-garden="848" data-year="2020" data-floors="1" data-commute="10" data-build="expand" data-elabel="a2015" data-gorient="" data-fscore="39.4" data-expense="5984" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="sofielundsvej 33, 2600 glostrup glostrup 2600"></article>
+<article class="card" data-i="55" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Solrød" data-price="10495000" data-area="182" data-rooms="5" data-garden="788" data-year="2011" data-floors="1" data-commute="18" data-build="expand" data-elabel="b" data-gorient="" data-fscore="34.6" data-expense="5889" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="skovparken 12, 2680 solrød strand solrød 2680"></article>
+<article class="card" data-i="56" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Hørsholm" data-price="10950000" data-area="223" data-rooms="7" data-garden="1227" data-year="1977" data-floors="1" data-commute="33" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="46.9" data-expense="7440" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lærkevænget 14, 2970 hørsholm hørsholm 2970"></article>
+<article class="card" data-i="57" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Rudersdal" data-price="10995000" data-area="167" data-rooms="5" data-garden="1970" data-year="1922" data-floors="1" data-commute="26" data-build="extra_house" data-elabel="d" data-gorient="" data-fscore="38.2" data-expense="8465" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="birkebakken 20a, 2840 holte rudersdal 2840"></article>
+<article class="card" data-i="58" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="1" data-muni="Hørsholm" data-price="10995000" data-area="239" data-rooms="7" data-garden="980" data-year="1971" data-floors="1" data-commute="32" data-build="expand" data-elabel="d" data-gorient="" data-fscore="42.8" data-expense="7342" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="søvang 30, 2970 hørsholm hørsholm 2970"></article>
+<article class="card" data-i="59" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Tårnby" data-price="11750000" data-area="185" data-rooms="6" data-garden="683" data-year="2023" data-floors="1" data-commute="14" data-build="none" data-elabel="a2020" data-gorient="" data-fscore="39.4" data-expense="3941" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="moselundvej 28, 2770 kastrup tårnby 2770"></article>
+<article class="card" data-i="60" data-conf="possible" data-confrank="2" data-preferred="1" data-new="0" data-noise="quiet" data-vision="0" data-muni="Hørsholm" data-price="11995000" data-area="181" data-rooms="5" data-garden="842" data-year="2015" data-floors="1" data-commute="31" data-build="expand" data-elabel="a2010" data-gorient="" data-fscore="38.9" data-expense="7320" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="parkvej 5, 2960 rungsted kyst hørsholm 2960"></article>
+<article class="card" data-i="61" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Lejre" data-price="2499000" data-area="184" data-rooms="7" data-garden="626" data-year="2008" data-floors="2" data-commute="25" data-build="none" data-elabel="b" data-gorient="" data-fscore="37.6" data-expense="2371" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="rye gade 4, 4060 kirke såby lejre 4060"></article>
+<article class="card" data-i="62" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Solrød" data-price="3550000" data-area="242" data-rooms="6" data-garden="1047" data-year="1920" data-floors="2" data-commute="22" data-build="expand" data-elabel="c" data-gorient="" data-fscore="43.6" data-expense="4116" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="naurbjergvej 16, 4623 lille skensved solrød 4623"></article>
+<article class="card" data-i="63" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Egedal" data-price="3695000" data-area="150" data-rooms="3" data-garden="951" data-year="1951" data-floors="2" data-commute="22" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="29.1" data-expense="2981" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="måløvvej 30a, 3660 stenløse egedal 3660"></article>
+<article class="card" data-i="64" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="noisy" data-vision="1" data-muni="Høje-Taastrup" data-price="5995000" data-area="199" data-rooms="5" data-garden="1200" data-year="1976" data-floors="1" data-commute="5" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="35.5" data-expense="4015" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="roskildevej 321a, 2630 taastrup høje-taastrup 2630"></article>
+<article class="card" data-i="65" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Gladsaxe" data-price="6150000" data-area="158" data-rooms="5" data-garden="591" data-year="1930" data-floors="2" data-commute="15" data-build="none" data-elabel="c" data-gorient="" data-fscore="27.7" data-expense="4204" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lillegårds alle 17, 2860 søborg gladsaxe 2860"></article>
+<article class="card" data-i="66" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Tårnby" data-price="6495000" data-area="157" data-rooms="4" data-garden="540" data-year="1977" data-floors="2" data-commute="15" data-build="none" data-elabel="c" data-gorient="" data-fscore="25.4" data-expense="4054" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="tømmerupvang 64, 2770 kastrup tårnby 2770"></article>
+<article class="card" data-i="67" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Ishøj" data-price="6495000" data-area="203" data-rooms="5" data-garden="1128" data-year="1919" data-floors="3" data-commute="6" data-build="extra_house" data-elabel="b" data-gorient="" data-fscore="39.1" data-expense="3704" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="køgevej 285, 2635 ishøj ishøj 2635"></article>
+<article class="card" data-i="68" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Lejre" data-price="6499000" data-area="241" data-rooms="8" data-garden="56817" data-year="1890" data-floors="2" data-commute="30" data-build="extra_house" data-elabel="e" data-gorient="" data-fscore="49.8" data-expense="4026" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="kirkeskovvej 2, 4330 hvalsø lejre 4330"></article>
+<article class="card" data-i="69" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Solrød" data-price="6995000" data-area="216" data-rooms="7" data-garden="854" data-year="1968" data-floors="2" data-commute="20" data-build="expand" data-elabel="a2010" data-gorient="" data-fscore="42.8" data-expense="3939" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lærkevænget 8, 2680 solrød strand solrød 2680"></article>
+<article class="card" data-i="70" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Køge" data-price="7495000" data-area="155" data-rooms="7" data-garden="603" data-year="1934" data-floors="2" data-commute="26" data-build="none" data-elabel="f" data-gorient="" data-fscore="33.1" data-expense="5108" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="tøxensvej 29, 4600 køge køge 4600"></article>
+<article class="card" data-i="71" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Dragør" data-price="7495000" data-area="221" data-rooms="6" data-garden="1050" data-year="1974" data-floors="1" data-commute="20" data-build="extra_house" data-elabel="b" data-gorient="" data-fscore="44.1" data-expense="4809" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="søvej 6, 2791 dragør dragør 2791"></article>
+<article class="card" data-i="72" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Tårnby" data-price="7495000" data-area="190" data-rooms="8" data-garden="782" data-year="1964" data-floors="2" data-commute="13" data-build="expand" data-elabel="c" data-gorient="" data-fscore="40.4" data-expense="4712" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="majbøl alle 1, 2770 kastrup tårnby 2770"></article>
+<article class="card" data-i="73" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Solrød" data-price="7645000" data-area="180" data-rooms="5" data-garden="591" data-year="1970" data-floors="2" data-commute="20" data-build="none" data-elabel="c" data-gorient="" data-fscore="31.0" data-expense="4416" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="lærkevej 12, 2680 solrød strand solrød 2680"></article>
+<article class="card" data-i="74" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="noisy" data-vision="1" data-muni="Gladsaxe" data-price="7800000" data-area="232" data-rooms="6" data-garden="1552" data-year="1968" data-floors="1" data-commute="18" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="41.5" data-expense="5893" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="skovsøen 46, 2880 bagsværd gladsaxe 2880"></article>
+<article class="card" data-i="75" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Rudersdal" data-price="7995000" data-area="177" data-rooms="7" data-garden="743" data-year="1964" data-floors="2" data-commute="31" data-build="expand" data-elabel="a2010" data-gorient="" data-fscore="36.5" data-expense="6519" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="biskop svanes vej 45a, 3460 birkerød rudersdal 3460"></article>
+<article class="card" data-i="76" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Furesø" data-price="7995000" data-area="183" data-rooms="5" data-garden="1232" data-year="1965" data-floors="2" data-commute="23" data-build="extra_house" data-elabel="c" data-gorient="" data-fscore="41.0" data-expense="6151" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="toftegårdsvej 19, 3520 farum furesø 3520"></article>
+<article class="card" data-i="77" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="noisy" data-vision="1" data-muni="Roskilde" data-price="7995000" data-area="188" data-rooms="5" data-garden="766" data-year="1959" data-floors="1" data-commute="14" data-build="expand" data-elabel="b" data-gorient="" data-fscore="29.3" data-expense="3535" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="svanevej 59, 4000 roskilde roskilde 4000"></article>
 <article class="card" data-i="78" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Køge" data-price="8495000" data-area="178" data-rooms="9" data-garden="12135" data-year="1920" data-floors="2" data-commute="30" data-build="extra_house" data-elabel="e" data-gorient="" data-fscore="44.6" data-expense="3753" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="teglværksvej 1, 4681 herfølge køge 4681"></article>
 <article class="card" data-i="79" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="0" data-muni="Køge" data-price="9495000" data-area="229" data-rooms="6" data-garden="1445" data-year="2007" data-floors="2" data-commute="26" data-build="extra_house" data-elabel="a2010" data-gorient="" data-fscore="48.5" data-expense="4344" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="krageskovbakken 7, 4600 køge køge 4600"></article>
 <article class="card" data-i="80" data-conf="possible" data-confrank="2" data-preferred="0" data-new="0" data-noise="quiet" data-vision="1" data-muni="Dragør" data-price="9995000" data-area="186" data-rooms="6" data-garden="811" data-year="1930" data-floors="2" data-commute="22" data-build="expand" data-elabel="c" data-gorient="" data-fscore="40.4" data-expense="5038" data-fam="two_family" data-mgen="" data-vcond="" data-vprivacy="" data-search="søvej 57a, 2791 dragør dragør 2791"></article>
@@ -1142,7 +1159,7 @@ details.build-detail p {
 </main>
 
 <footer class="footer">
-  Generated 2026-06-29 18:31 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
+  Generated 2026-06-29 19:04 UTC · Source: Boligsiden api.boligsiden.dk/search/cases · Built with the tofamiliehus static-page generator.<br>
   Estimates (buildable headroom, AI floor-plan reads, commute times) are heuristic — verify with the kommune and the listing.
 </footer>
 <script>const listings = [
@@ -1185,6 +1202,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 45.4,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 58.0,
+      "garden": 70.0,
+      "shared_living": 6.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1264,6 +1288,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 34.9,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 43.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1344,6 +1375,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 38.6,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 50.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 10.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1419,6 +1457,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 35.4,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 33.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1504,6 +1549,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 39.9,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 48.0,
+      "garden": 58.0,
+      "shared_living": 10.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1578,6 +1630,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 38.4,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 48.0,
+      "garden": 58.0,
+      "shared_living": 10.0,
+      "practical": 28.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1625,90 +1684,6 @@ details.build-detail p {
     "is_three_family": false
   },
   {
-    "id": "10409c21-e54c-4dd6-b001-a5303689b404",
-    "address": "Kildevej 31A, 2960 Rungsted Kyst",
-    "city": "2960 Hørsholm",
-    "municipality": "Hørsholm",
-    "price_dkk": 10995000,
-    "link": "https://www.boligsiden.dk/cases/10409c21-e54c-4dd6-b001-a5303689b404",
-    "preview_image": "https://images.boligsiden.dk/images/case/10409c21-e54c-4dd6-b001-a5303689b404/600x400/ffea6a13-7165-4a0a-a9ea-09849e2a8eb6.webp",
-    "two_family_confidence": "confirmed",
-    "two_family_reasons": [
-      "BBR building label contains 'tofamilie'"
-    ],
-    "preferred": false,
-    "rooms": 5,
-    "area_m2": 219,
-    "year_built": 2017,
-    "floors": 2,
-    "type": "villa",
-    "garden_m2": 836,
-    "build_headroom": 115,
-    "build_note": "~115 m² spare at 40% (est.; confirm lokalplan with kommune)",
-    "noise": "quiet",
-    "noise_db": null,
-    "noise_label": "no mapped road/rail noise",
-    "vision": null,
-    "vision_rooms": [],
-    "vision_multigen_layout": null,
-    "vision_separate_entrance": null,
-    "vision_second_kitchen": null,
-    "vision_privacy_score": null,
-    "vision_bathroom_count": null,
-    "vision_bedroom_count": null,
-    "vision_parking_count": null,
-    "vision_garden_orientation": "",
-    "vision_garden_structure": "",
-    "vision_dining_capacity": null,
-    "vision_kitchen_size": "",
-    "family_score": 39.9,
-    "commute": [
-      {
-        "label": "Høje Taastrup st.",
-        "car_min": 37,
-        "car_km": 43.0,
-        "bike_min": 118,
-        "bike_km": 39.1,
-        "public_min": 70,
-        "public_xfers": 1
-      },
-      {
-        "label": "Stamholmen, Hvidovre",
-        "car_min": 34,
-        "car_km": 39.5,
-        "bike_min": 108,
-        "bike_km": 36.6,
-        "public_min": 84,
-        "public_xfers": 3
-      }
-    ],
-    "sold": [
-      {
-        "year": "2021",
-        "amount": 7200000,
-        "per_m2": 32579
-      },
-      {
-        "year": "2018",
-        "amount": 4450000,
-        "per_m2": null
-      },
-      {
-        "year": "2016",
-        "amount": 5829174,
-        "per_m2": null
-      }
-    ],
-    "maegler_url": "https://www.estate.dk/services/redirect/case/N105093/N1050930000327",
-    "new": false,
-    "buildable_status": "extra_house",
-    "energy_label": "a2010",
-    "monthly_expense": 6289,
-    "in_price_band": true,
-    "days_on_market": 0,
-    "is_three_family": false
-  },
-  {
     "id": "6d440e8d-6547-4e64-868a-ee1a3ed4b396",
     "address": "Padborgvej 22, 4600 Køge",
     "city": "4600 Køge",
@@ -1747,6 +1722,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 30.7,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 33.0,
+      "garden": 46.0,
+      "shared_living": 0.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1832,6 +1814,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 38.4,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 50.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 45.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1907,6 +1896,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 43.9,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 58.0,
+      "garden": 70.0,
+      "shared_living": 6.0,
+      "practical": 28.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -1981,6 +1977,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 43.9,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 50.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2013,74 +2016,6 @@ details.build-detail p {
     "buildable_status": "extra_house",
     "energy_label": "d",
     "monthly_expense": 8175,
-    "in_price_band": true,
-    "days_on_market": 0,
-    "is_three_family": false
-  },
-  {
-    "id": "617af3b3-8b20-4277-b1f9-54a9668ac049",
-    "address": "Kastanievej 3, 4130 Viby Sjælland",
-    "city": "4130 Roskilde",
-    "municipality": "Roskilde",
-    "price_dkk": 2895000,
-    "link": "https://www.boligsiden.dk/cases/617af3b3-8b20-4277-b1f9-54a9668ac049",
-    "preview_image": "https://images.boligsiden.dk/images/case/617af3b3-8b20-4277-b1f9-54a9668ac049/600x400/903e7a3f-acc8-422c-9e3a-78b9e0ec220e.webp",
-    "two_family_confidence": "likely",
-    "two_family_reasons": [
-      "multiple two-dwelling hints: ['to selvstændige', 'egen indgang']"
-    ],
-    "preferred": false,
-    "rooms": 6,
-    "area_m2": 176,
-    "year_built": 1904,
-    "floors": 2,
-    "type": "villa",
-    "garden_m2": 616,
-    "build_headroom": 70,
-    "build_note": "~70 m² spare at 40% (est.; confirm lokalplan with kommune)",
-    "noise": "quiet",
-    "noise_db": null,
-    "noise_label": "no mapped road/rail noise",
-    "vision": null,
-    "vision_rooms": [],
-    "vision_multigen_layout": null,
-    "vision_separate_entrance": null,
-    "vision_second_kitchen": null,
-    "vision_privacy_score": null,
-    "vision_bathroom_count": null,
-    "vision_bedroom_count": null,
-    "vision_parking_count": null,
-    "vision_garden_orientation": "",
-    "vision_garden_structure": "",
-    "vision_dining_capacity": null,
-    "vision_kitchen_size": "",
-    "family_score": 34.4,
-    "commute": [
-      {
-        "label": "Høje Taastrup st.",
-        "car_min": 28,
-        "car_km": 26.8,
-        "bike_min": 74,
-        "bike_km": 25.8,
-        "public_min": 30,
-        "public_xfers": 0
-      },
-      {
-        "label": "Stamholmen, Hvidovre",
-        "car_min": 36,
-        "car_km": 39.3,
-        "bike_min": 100,
-        "bike_km": 36.1,
-        "public_min": 72,
-        "public_xfers": 2
-      }
-    ],
-    "sold": [],
-    "maegler_url": "https://minbolighandel.dk/sag/27900000062",
-    "new": false,
-    "buildable_status": "expand",
-    "energy_label": "d",
-    "monthly_expense": 3028,
     "in_price_band": true,
     "days_on_market": 0,
     "is_three_family": false
@@ -2124,6 +2059,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 46.9,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 58.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2150,154 +2092,6 @@ details.build-detail p {
     "buildable_status": "extra_house",
     "energy_label": "c",
     "monthly_expense": 3618,
-    "in_price_band": true,
-    "days_on_market": 0,
-    "is_three_family": false
-  },
-  {
-    "id": "c1b21971-c919-4b99-b789-a9db89be2470",
-    "address": "Karlebyvej 208, 4070 Kirke Hyllinge",
-    "city": "4070 Lejre",
-    "municipality": "Lejre",
-    "price_dkk": 4745000,
-    "link": "https://www.boligsiden.dk/cases/c1b21971-c919-4b99-b789-a9db89be2470",
-    "preview_image": "https://images.boligsiden.dk/images/case/c1b21971-c919-4b99-b789-a9db89be2470/600x400/38e88405-5738-42a2-8eff-d3df7eb741be.webp",
-    "two_family_confidence": "likely",
-    "two_family_reasons": [
-      "weak two-dwelling hint: 'to selvstændige'",
-      "vision: plan shows two dwellings — Separate 'Anneks' with its own entrance and bathroom (confidence possible→likely)"
-    ],
-    "preferred": false,
-    "rooms": 6,
-    "area_m2": 251,
-    "year_built": 2020,
-    "floors": 1,
-    "type": "villa",
-    "garden_m2": 852,
-    "build_headroom": 5,
-    "build_note": "~5 m² spare at 30% (est.; confirm lokalplan with kommune)",
-    "noise": "quiet",
-    "noise_db": null,
-    "noise_label": "no mapped road/rail noise",
-    "vision": "A two-story residence featuring a main living area with multiple bedrooms and an additional detached or semi-detached annex.",
-    "vision_rooms": [],
-    "vision_multigen_layout": null,
-    "vision_separate_entrance": null,
-    "vision_second_kitchen": null,
-    "vision_privacy_score": null,
-    "vision_bathroom_count": null,
-    "vision_bedroom_count": null,
-    "vision_parking_count": null,
-    "vision_garden_orientation": "",
-    "vision_garden_structure": "",
-    "vision_dining_capacity": null,
-    "vision_kitchen_size": "",
-    "family_score": 44.9,
-    "commute": [
-      {
-        "label": "Høje Taastrup st.",
-        "car_min": 29,
-        "car_km": 32.7,
-        "bike_min": 94,
-        "bike_km": 30.6,
-        "public_min": 62,
-        "public_xfers": 1
-      },
-      {
-        "label": "Stamholmen, Hvidovre",
-        "car_min": 39,
-        "car_km": 48.9,
-        "bike_min": 142,
-        "bike_km": 48.1,
-        "public_min": 118,
-        "public_xfers": 3
-      }
-    ],
-    "sold": [
-      {
-        "year": "2020",
-        "amount": 3500000,
-        "per_m2": 13834
-      },
-      {
-        "year": "2017",
-        "amount": 410000,
-        "per_m2": 4457
-      }
-    ],
-    "maegler_url": "https://karhof.dk/sag.aspx?mgl=2835&sagsnr=842",
-    "new": false,
-    "buildable_status": "none",
-    "energy_label": "a2010",
-    "monthly_expense": 3388,
-    "in_price_band": true,
-    "days_on_market": 0,
-    "is_three_family": false
-  },
-  {
-    "id": "5ca0b6ef-3cba-44e6-a18e-9d857c72bfec",
-    "address": "Klovtoftegade 2, 2630 Taastrup",
-    "city": "2630 Høje-Taastrup",
-    "municipality": "Høje-Taastrup",
-    "price_dkk": 4995000,
-    "link": "https://www.boligsiden.dk/cases/5ca0b6ef-3cba-44e6-a18e-9d857c72bfec",
-    "preview_image": "https://images.boligsiden.dk/images/case/5ca0b6ef-3cba-44e6-a18e-9d857c72bfec/600x400/8b0eabf9-8ceb-435e-87ed-48808bab9afc.webp",
-    "two_family_confidence": "likely",
-    "two_family_reasons": [
-      "listing text contains strong term 'flerfamilie'"
-    ],
-    "preferred": false,
-    "rooms": 6,
-    "area_m2": 212,
-    "year_built": 1918,
-    "floors": 2,
-    "type": "villa",
-    "garden_m2": 792,
-    "build_headroom": 105,
-    "build_note": "~105 m² spare at 40% (est.; confirm lokalplan with kommune)",
-    "noise": "noisy",
-    "noise_db": 60.5,
-    "noise_label": "noticeable",
-    "vision": null,
-    "vision_rooms": [],
-    "vision_multigen_layout": null,
-    "vision_separate_entrance": null,
-    "vision_second_kitchen": null,
-    "vision_privacy_score": null,
-    "vision_bathroom_count": null,
-    "vision_bedroom_count": null,
-    "vision_parking_count": null,
-    "vision_garden_orientation": "",
-    "vision_garden_structure": "",
-    "vision_dining_capacity": null,
-    "vision_kitchen_size": "",
-    "family_score": 32.5,
-    "commute": [
-      {
-        "label": "Høje Taastrup st.",
-        "car_min": 5,
-        "car_km": 3.8,
-        "bike_min": 11,
-        "bike_km": 3.5,
-        "public_min": 16,
-        "public_xfers": 1
-      },
-      {
-        "label": "Stamholmen, Hvidovre",
-        "car_min": 12,
-        "car_km": 14.4,
-        "bike_min": 43,
-        "bike_km": 15.4,
-        "public_min": 61,
-        "public_xfers": 2
-      }
-    ],
-    "sold": [],
-    "maegler_url": "https://www.danbolig.dk?propertyid=0060000927&brokerid=006",
-    "new": false,
-    "buildable_status": "extra_house",
-    "energy_label": "c",
-    "monthly_expense": 4393,
     "in_price_band": true,
     "days_on_market": 0,
     "is_three_family": false
@@ -2341,6 +2135,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 43.6,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 66.0,
+      "garden": 58.0,
+      "shared_living": 10.0,
+      "practical": 28.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2378,6 +2179,97 @@ details.build-detail p {
     "buildable_status": "extra_house",
     "energy_label": "c",
     "monthly_expense": 4126,
+    "in_price_band": true,
+    "days_on_market": 0,
+    "is_three_family": false
+  },
+  {
+    "id": "d6b9dbbe-bd2a-49b4-b71c-1b108e30eb46",
+    "address": "Vestermarken 2B, 2750 Ballerup",
+    "city": "2750 Ballerup",
+    "municipality": "Ballerup",
+    "price_dkk": 5750000,
+    "link": "https://www.boligsiden.dk/cases/d6b9dbbe-bd2a-49b4-b71c-1b108e30eb46",
+    "preview_image": "https://images.boligsiden.dk/images/case/d6b9dbbe-bd2a-49b4-b71c-1b108e30eb46/600x400/d15340ab-d7f8-4fbf-88fc-6eae58d2cac5.webp",
+    "two_family_confidence": "likely",
+    "two_family_reasons": [
+      "listing text contains strong term 'flerfamilie'"
+    ],
+    "preferred": false,
+    "rooms": 6,
+    "area_m2": 166,
+    "year_built": 1998,
+    "floors": 3,
+    "type": "villa",
+    "garden_m2": 983,
+    "build_headroom": 227,
+    "build_note": "~227 m² spare at 40% (est.; confirm lokalplan with kommune)",
+    "noise": "quiet",
+    "noise_db": null,
+    "noise_label": "no mapped road/rail noise",
+    "vision": null,
+    "vision_rooms": [],
+    "vision_multigen_layout": null,
+    "vision_separate_entrance": null,
+    "vision_second_kitchen": null,
+    "vision_privacy_score": null,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": 38.4,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 51.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 28.0
+    },
+    "commute": [
+      {
+        "label": "Høje Taastrup st.",
+        "car_min": 12,
+        "car_km": 13.6,
+        "bike_min": 39,
+        "bike_km": 13.4,
+        "public_min": 29,
+        "public_xfers": 0
+      },
+      {
+        "label": "Stamholmen, Hvidovre",
+        "car_min": 16,
+        "car_km": 19.2,
+        "bike_min": 54,
+        "bike_km": 19.5,
+        "public_min": 62,
+        "public_xfers": 2
+      }
+    ],
+    "sold": [
+      {
+        "year": "2018",
+        "amount": 3725000,
+        "per_m2": 22440
+      },
+      {
+        "year": "2008",
+        "amount": 2900000,
+        "per_m2": 14010
+      },
+      {
+        "year": "2008",
+        "amount": 2900000,
+        "per_m2": 14010
+      }
+    ],
+    "maegler_url": "https://www.nybolig.dk/services/redirect/case/N260142/N2601420000664",
+    "new": true,
+    "buildable_status": "extra_house",
+    "energy_label": "c",
+    "monthly_expense": 4558,
     "in_price_band": true,
     "days_on_market": 0,
     "is_three_family": false
@@ -2421,6 +2313,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 41.3,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 70.0,
+      "garden": 46.0,
+      "shared_living": 10.0,
+      "practical": 28.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2447,6 +2346,97 @@ details.build-detail p {
     "buildable_status": "extra_house",
     "energy_label": "c",
     "monthly_expense": 5460,
+    "in_price_band": true,
+    "days_on_market": 0,
+    "is_three_family": false
+  },
+  {
+    "id": "120a83c9-83e6-4292-99b8-aa8589025250",
+    "address": "Vejlands Allé 124, 2300 København S",
+    "city": "2300 København",
+    "municipality": "København",
+    "price_dkk": 7995000,
+    "link": "https://www.boligsiden.dk/cases/120a83c9-83e6-4292-99b8-aa8589025250",
+    "preview_image": "https://images.boligsiden.dk/images/case/120a83c9-83e6-4292-99b8-aa8589025250/600x400/977627ed-0854-4ad6-9222-314e18727fdc.webp",
+    "two_family_confidence": "likely",
+    "two_family_reasons": [
+      "listing text contains strong term 'to familie'"
+    ],
+    "preferred": false,
+    "rooms": 9,
+    "area_m2": 216,
+    "year_built": 2011,
+    "floors": 2,
+    "type": "villa",
+    "garden_m2": 590,
+    "build_headroom": 20,
+    "build_note": "~20 m² spare at 40% (est.; confirm lokalplan with kommune)",
+    "noise": "noisy",
+    "noise_db": 62.5,
+    "noise_label": "noticeable",
+    "vision": null,
+    "vision_rooms": [],
+    "vision_multigen_layout": null,
+    "vision_separate_entrance": null,
+    "vision_second_kitchen": null,
+    "vision_privacy_score": null,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": 34.3,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 70.0,
+      "garden": 35.0,
+      "shared_living": 10.0,
+      "practical": 10.0
+    },
+    "commute": [
+      {
+        "label": "Høje Taastrup st.",
+        "car_min": 24,
+        "car_km": 25.0,
+        "bike_min": 71,
+        "bike_km": 24.0,
+        "public_min": 43,
+        "public_xfers": 2
+      },
+      {
+        "label": "Stamholmen, Hvidovre",
+        "car_min": 11,
+        "car_km": 10.0,
+        "bike_min": 26,
+        "bike_km": 9.1,
+        "public_min": 33,
+        "public_xfers": 3
+      }
+    ],
+    "sold": [
+      {
+        "year": "2020",
+        "amount": 5600000,
+        "per_m2": 25112
+      },
+      {
+        "year": "2009",
+        "amount": 1195000,
+        "per_m2": 5359
+      },
+      {
+        "year": "2007",
+        "amount": 2450000,
+        "per_m2": 10987
+      }
+    ],
+    "maegler_url": "https://www.lokalbolig.dk/?sag=10-X0003182",
+    "new": false,
+    "buildable_status": "none",
+    "energy_label": "a2010",
+    "monthly_expense": 5486,
     "in_price_band": true,
     "days_on_market": 0,
     "is_three_family": false
@@ -2489,6 +2479,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 34.4,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 70.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 0.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2536,6 +2533,98 @@ details.build-detail p {
     "is_three_family": false
   },
   {
+    "id": "d7606201-b2a4-4e84-8be0-e2a77d42ade1",
+    "address": "Vejdammen 54, 2840 Holte",
+    "city": "2840 Rudersdal",
+    "municipality": "Rudersdal",
+    "price_dkk": 8250000,
+    "link": "https://www.boligsiden.dk/cases/d7606201-b2a4-4e84-8be0-e2a77d42ade1",
+    "preview_image": "https://images.boligsiden.dk/images/case/d7606201-b2a4-4e84-8be0-e2a77d42ade1/600x400/c8946b37-8db0-49bb-80dc-6651187d4a3d.webp",
+    "two_family_confidence": "likely",
+    "two_family_reasons": [
+      "multiple two-dwelling hints: ['dobbelt', 'eget badeværelse']",
+      "vision: plan reads as a single dwelling (heuristic confidence kept)"
+    ],
+    "preferred": false,
+    "rooms": 5,
+    "area_m2": 239,
+    "year_built": 1978,
+    "floors": 2,
+    "type": "villa",
+    "garden_m2": 1368,
+    "build_headroom": 308,
+    "build_note": "~308 m² spare at 40% (est.; confirm lokalplan with kommune)",
+    "noise": "noisy",
+    "noise_db": 65.5,
+    "noise_label": "loud",
+    "vision": "The plan shows a two-story layout with multiple bedrooms distributed across both levels and shared common areas.",
+    "vision_rooms": [],
+    "vision_multigen_layout": null,
+    "vision_separate_entrance": null,
+    "vision_second_kitchen": null,
+    "vision_privacy_score": null,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": 38.1,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 56.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 0.0
+    },
+    "commute": [
+      {
+        "label": "Høje Taastrup st.",
+        "car_min": 30,
+        "car_km": 35.7,
+        "bike_min": 97,
+        "bike_km": 32.6,
+        "public_min": 70,
+        "public_xfers": 2
+      },
+      {
+        "label": "Stamholmen, Hvidovre",
+        "car_min": 26,
+        "car_km": 32.2,
+        "bike_min": 84,
+        "bike_km": 29.2,
+        "public_min": 81,
+        "public_xfers": 2
+      }
+    ],
+    "sold": [
+      {
+        "year": "2007",
+        "amount": 4995000,
+        "per_m2": 20900
+      },
+      {
+        "year": "2007",
+        "amount": 4995000,
+        "per_m2": 19065
+      },
+      {
+        "year": "2003",
+        "amount": 2400000,
+        "per_m2": 9160
+      }
+    ],
+    "maegler_url": "https://www.realmaeglerne.dk/301-redirect/?mgl=R357&sagsnr=357J276",
+    "new": false,
+    "buildable_status": "extra_house",
+    "energy_label": "d",
+    "monthly_expense": 5021,
+    "in_price_band": true,
+    "days_on_market": 0,
+    "is_three_family": false
+  },
+  {
     "id": "0b7d1bec-f3ed-46ce-8ced-b15dc5ab9c91",
     "address": "Kongemarksvej 90, 4000 Roskilde",
     "city": "4000 Lejre",
@@ -2574,6 +2663,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 53.0,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 78.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 40.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2606,6 +2702,87 @@ details.build-detail p {
     "buildable_status": "extra_house",
     "energy_label": "a2020",
     "monthly_expense": 5135,
+    "in_price_band": true,
+    "days_on_market": 0,
+    "is_three_family": false
+  },
+  {
+    "id": "22144a5d-efff-47f5-b19c-e952ecb6307c",
+    "address": "Vesterløkken 6A, 2700 Brønshøj",
+    "city": "2700 København",
+    "municipality": "København",
+    "price_dkk": 8995000,
+    "link": "https://www.boligsiden.dk/cases/22144a5d-efff-47f5-b19c-e952ecb6307c",
+    "preview_image": "https://images.boligsiden.dk/images/case/22144a5d-efff-47f5-b19c-e952ecb6307c/600x400/7981e746-ee68-4c42-ad89-9b7218f2d30e.webp",
+    "two_family_confidence": "likely",
+    "two_family_reasons": [
+      "listing text contains strong term 'tofamilie'"
+    ],
+    "preferred": false,
+    "rooms": 6,
+    "area_m2": 157,
+    "year_built": 1937,
+    "floors": 3,
+    "type": "villa",
+    "garden_m2": 613,
+    "build_headroom": 88,
+    "build_note": "~88 m² spare at 40% (est.; confirm lokalplan with kommune)",
+    "noise": "quiet",
+    "noise_db": null,
+    "noise_label": "no mapped road/rail noise",
+    "vision": null,
+    "vision_rooms": [],
+    "vision_multigen_layout": null,
+    "vision_separate_entrance": null,
+    "vision_second_kitchen": null,
+    "vision_privacy_score": null,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": 33.7,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 51.0,
+      "garden": 46.0,
+      "shared_living": 0.0,
+      "practical": 28.0
+    },
+    "commute": [
+      {
+        "label": "Høje Taastrup st.",
+        "car_min": 19,
+        "car_km": 18.2,
+        "bike_min": 46,
+        "bike_km": 15.8,
+        "public_min": 32,
+        "public_xfers": 1
+      },
+      {
+        "label": "Stamholmen, Hvidovre",
+        "car_min": 15,
+        "car_km": 15.3,
+        "bike_min": 33,
+        "bike_km": 11.8,
+        "public_min": 53,
+        "public_xfers": 2
+      }
+    ],
+    "sold": [
+      {
+        "year": "2018",
+        "amount": 2050000,
+        "per_m2": 13057
+      }
+    ],
+    "maegler_url": "https://www.danbolig.dk?propertyid=0630001410&brokerid=063",
+    "new": false,
+    "buildable_status": "extra_house",
+    "energy_label": "c",
+    "monthly_expense": 5879,
     "in_price_band": true,
     "days_on_market": 0,
     "is_three_family": false
@@ -2649,6 +2826,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 41.1,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 50.0,
+      "garden": 58.0,
+      "shared_living": 10.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2675,6 +2859,81 @@ details.build-detail p {
     "buildable_status": "extra_house",
     "energy_label": "c",
     "monthly_expense": 5792,
+    "in_price_band": true,
+    "days_on_market": 0,
+    "is_three_family": false
+  },
+  {
+    "id": "f54845a3-18de-455a-b153-b5db004c8d9f",
+    "address": "Vejlands Allé 22, 2300 København S",
+    "city": "2300 København",
+    "municipality": "København",
+    "price_dkk": 9800000,
+    "link": "https://www.boligsiden.dk/cases/f54845a3-18de-455a-b153-b5db004c8d9f",
+    "preview_image": "https://images.boligsiden.dk/images/case/f54845a3-18de-455a-b153-b5db004c8d9f/600x400/cc9d8dbd-e658-4c1a-b8a4-c77b5d18bd86.webp",
+    "two_family_confidence": "likely",
+    "two_family_reasons": [
+      "listing text contains strong term 'to-familie'"
+    ],
+    "preferred": false,
+    "rooms": 5,
+    "area_m2": 178,
+    "year_built": 1940,
+    "floors": 2,
+    "type": "villa",
+    "garden_m2": 590,
+    "build_headroom": 58,
+    "build_note": "~58 m² spare at 40% (est.; confirm lokalplan with kommune)",
+    "noise": "quiet",
+    "noise_db": null,
+    "noise_label": "no mapped road/rail noise",
+    "vision": null,
+    "vision_rooms": [],
+    "vision_multigen_layout": null,
+    "vision_separate_entrance": null,
+    "vision_second_kitchen": null,
+    "vision_privacy_score": null,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": 28.4,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 41.0,
+      "garden": 35.0,
+      "shared_living": 6.0,
+      "practical": 25.0
+    },
+    "commute": [
+      {
+        "label": "Høje Taastrup st.",
+        "car_min": 26,
+        "car_km": 26.1,
+        "bike_min": 73,
+        "bike_km": 24.5,
+        "public_min": 46,
+        "public_xfers": 1
+      },
+      {
+        "label": "Stamholmen, Hvidovre",
+        "car_min": 13,
+        "car_km": 11.2,
+        "bike_min": 29,
+        "bike_km": 10.2,
+        "public_min": 38,
+        "public_xfers": 3
+      }
+    ],
+    "sold": [],
+    "maegler_url": "https://www.realmaeglerne.dk/301-redirect/?mgl=R113&sagsnr=113-3296800",
+    "new": false,
+    "buildable_status": "expand",
+    "energy_label": "f",
+    "monthly_expense": 4918,
     "in_price_band": true,
     "days_on_market": 0,
     "is_three_family": false
@@ -2718,6 +2977,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 41.7,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 43.0,
+      "garden": 70.0,
+      "shared_living": 6.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2803,6 +3069,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 33.1,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 25.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2877,6 +3150,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 43.1,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 62.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -2945,6 +3225,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 36.8,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 40.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3019,6 +3306,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 34.1,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 33.0,
+      "garden": 58.0,
+      "shared_living": 0.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3104,6 +3398,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 31.5,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 50.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 13.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3130,80 +3431,6 @@ details.build-detail p {
     "buildable_status": "expand",
     "energy_label": "c",
     "monthly_expense": 3569,
-    "in_price_band": true,
-    "days_on_market": 0,
-    "is_three_family": false
-  },
-  {
-    "id": "82f8a728-79a9-4bbe-ab86-44e6cc293f87",
-    "address": "Kildebjergs Agre 70, 4632 Bjæverskov",
-    "city": "4632 Køge",
-    "municipality": "Køge",
-    "price_dkk": 5595000,
-    "link": "https://www.boligsiden.dk/cases/82f8a728-79a9-4bbe-ab86-44e6cc293f87",
-    "preview_image": "https://images.boligsiden.dk/images/case/82f8a728-79a9-4bbe-ab86-44e6cc293f87/600x400/59583cda-5c8f-4ab6-a204-c41147585e3f.webp",
-    "two_family_confidence": "possible",
-    "two_family_reasons": [
-      "weak two-dwelling hint: 'dobbelt'"
-    ],
-    "preferred": true,
-    "rooms": 5,
-    "area_m2": 194,
-    "year_built": 2023,
-    "floors": 1,
-    "type": "villa",
-    "garden_m2": 800,
-    "build_headroom": 46,
-    "build_note": "~46 m² spare at 30% (est.; confirm lokalplan with kommune)",
-    "noise": "quiet",
-    "noise_db": null,
-    "noise_label": "no mapped road/rail noise",
-    "vision": null,
-    "vision_rooms": [],
-    "vision_multigen_layout": null,
-    "vision_separate_entrance": null,
-    "vision_second_kitchen": null,
-    "vision_privacy_score": null,
-    "vision_bathroom_count": null,
-    "vision_bedroom_count": null,
-    "vision_parking_count": null,
-    "vision_garden_orientation": "",
-    "vision_garden_structure": "",
-    "vision_dining_capacity": null,
-    "vision_kitchen_size": "",
-    "family_score": 39.4,
-    "commute": [
-      {
-        "label": "Høje Taastrup st.",
-        "car_min": 31,
-        "car_km": 36.0,
-        "bike_min": 95,
-        "bike_km": 33.0,
-        "public_min": 71,
-        "public_xfers": 1
-      },
-      {
-        "label": "Stamholmen, Hvidovre",
-        "car_min": 32,
-        "car_km": 40.9,
-        "bike_min": 114,
-        "bike_km": 41.0,
-        "public_min": 97,
-        "public_xfers": 3
-      }
-    ],
-    "sold": [
-      {
-        "year": "2021",
-        "amount": 1149453,
-        "per_m2": 5925
-      }
-    ],
-    "maegler_url": "https://www.kjeldskov.dk/sag.aspx?mgl=3027&sagsnr=K654372",
-    "new": false,
-    "buildable_status": "expand",
-    "energy_label": "a2015",
-    "monthly_expense": 3413,
     "in_price_band": true,
     "days_on_market": 0,
     "is_three_family": false
@@ -3246,6 +3473,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 39.6,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 50.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3314,6 +3548,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 38.3,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 43.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3398,6 +3639,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 34.9,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 43.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3483,6 +3731,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 42.2,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 50.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 47.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3568,6 +3823,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 36.1,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 33.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 41.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3653,6 +3915,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 35.5,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 43.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 41.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3738,6 +4007,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 34.9,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 50.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 13.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3817,6 +4093,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 38.0,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 33.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 50.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3854,81 +4137,6 @@ details.build-detail p {
     "buildable_status": "expand",
     "energy_label": "a2020",
     "monthly_expense": 4099,
-    "in_price_band": true,
-    "days_on_market": 0,
-    "is_three_family": false
-  },
-  {
-    "id": "6f89a307-6988-4b17-bd5a-30b37db13d09",
-    "address": "Ryttervænget 14, 3520 Farum",
-    "city": "3520 Furesø",
-    "municipality": "Furesø",
-    "price_dkk": 6495000,
-    "link": "https://www.boligsiden.dk/cases/6f89a307-6988-4b17-bd5a-30b37db13d09",
-    "preview_image": "https://images.boligsiden.dk/images/case/6f89a307-6988-4b17-bd5a-30b37db13d09/600x400/a2106a72-819e-4054-9b50-50c9533e8d31.webp",
-    "two_family_confidence": "possible",
-    "two_family_reasons": [
-      "weak two-dwelling hint: 'egen indgang'",
-      "vision: plan reads as a single dwelling (heuristic confidence kept)"
-    ],
-    "preferred": true,
-    "rooms": 6,
-    "area_m2": 161,
-    "year_built": 1968,
-    "floors": 1,
-    "type": "villa",
-    "garden_m2": 823,
-    "build_headroom": 86,
-    "build_note": "~86 m² spare at 30% (est.; confirm lokalplan with kommune)",
-    "noise": "quiet",
-    "noise_db": null,
-    "noise_label": "no mapped road/rail noise",
-    "vision": "A ground floor plan showing a large living/dining area, a kitchen, four sleeping rooms, and two bathrooms.",
-    "vision_rooms": [],
-    "vision_multigen_layout": null,
-    "vision_separate_entrance": null,
-    "vision_second_kitchen": null,
-    "vision_privacy_score": null,
-    "vision_bathroom_count": null,
-    "vision_bedroom_count": null,
-    "vision_parking_count": null,
-    "vision_garden_orientation": "",
-    "vision_garden_structure": "",
-    "vision_dining_capacity": null,
-    "vision_kitchen_size": "",
-    "family_score": 38.3,
-    "commute": [
-      {
-        "label": "Høje Taastrup st.",
-        "car_min": 25,
-        "car_km": 27.6,
-        "bike_min": 73,
-        "bike_km": 24.7,
-        "public_min": 58,
-        "public_xfers": 1
-      },
-      {
-        "label": "Stamholmen, Hvidovre",
-        "car_min": 23,
-        "car_km": 28.8,
-        "bike_min": 77,
-        "bike_km": 27.1,
-        "public_min": 82,
-        "public_xfers": 3
-      }
-    ],
-    "sold": [
-      {
-        "year": "2003",
-        "amount": 2125000,
-        "per_m2": 13199
-      }
-    ],
-    "maegler_url": "https://www.edc.dk/sag/?sagsnr=35402602",
-    "new": false,
-    "buildable_status": "extra_house",
-    "energy_label": "c",
-    "monthly_expense": 4881,
     "in_price_band": true,
     "days_on_market": 0,
     "is_three_family": false
@@ -3972,6 +4180,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 24.6,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 25.0,
+      "garden": 35.0,
+      "shared_living": 0.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -3998,6 +4213,88 @@ details.build-detail p {
     "buildable_status": "none",
     "energy_label": "",
     "monthly_expense": 4217,
+    "in_price_band": true,
+    "days_on_market": 0,
+    "is_three_family": false
+  },
+  {
+    "id": "6f89a307-6988-4b17-bd5a-30b37db13d09",
+    "address": "Ryttervænget 14, 3520 Farum",
+    "city": "3520 Furesø",
+    "municipality": "Furesø",
+    "price_dkk": 6495000,
+    "link": "https://www.boligsiden.dk/cases/6f89a307-6988-4b17-bd5a-30b37db13d09",
+    "preview_image": "https://images.boligsiden.dk/images/case/6f89a307-6988-4b17-bd5a-30b37db13d09/600x400/a2106a72-819e-4054-9b50-50c9533e8d31.webp",
+    "two_family_confidence": "possible",
+    "two_family_reasons": [
+      "weak two-dwelling hint: 'egen indgang'",
+      "vision: plan reads as a single dwelling (heuristic confidence kept)"
+    ],
+    "preferred": true,
+    "rooms": 6,
+    "area_m2": 161,
+    "year_built": 1968,
+    "floors": 1,
+    "type": "villa",
+    "garden_m2": 823,
+    "build_headroom": 86,
+    "build_note": "~86 m² spare at 30% (est.; confirm lokalplan with kommune)",
+    "noise": "quiet",
+    "noise_db": null,
+    "noise_label": "no mapped road/rail noise",
+    "vision": "A ground floor plan showing a large living/dining area, a kitchen, four sleeping rooms, and two bathrooms.",
+    "vision_rooms": [],
+    "vision_multigen_layout": null,
+    "vision_separate_entrance": null,
+    "vision_second_kitchen": null,
+    "vision_privacy_score": null,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": 38.3,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 43.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 38.0
+    },
+    "commute": [
+      {
+        "label": "Høje Taastrup st.",
+        "car_min": 25,
+        "car_km": 27.6,
+        "bike_min": 73,
+        "bike_km": 24.7,
+        "public_min": 58,
+        "public_xfers": 1
+      },
+      {
+        "label": "Stamholmen, Hvidovre",
+        "car_min": 23,
+        "car_km": 28.8,
+        "bike_min": 77,
+        "bike_km": 27.1,
+        "public_min": 82,
+        "public_xfers": 3
+      }
+    ],
+    "sold": [
+      {
+        "year": "2003",
+        "amount": 2125000,
+        "per_m2": 13199
+      }
+    ],
+    "maegler_url": "https://www.edc.dk/sag/?sagsnr=35402602",
+    "new": false,
+    "buildable_status": "extra_house",
+    "energy_label": "c",
+    "monthly_expense": 4881,
     "in_price_band": true,
     "days_on_market": 0,
     "is_three_family": false
@@ -4041,6 +4338,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 34.6,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 33.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 50.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4074,7 +4378,7 @@ details.build-detail p {
       }
     ],
     "maegler_url": "https://www.edc.dk/sag/?sagsnr=40102194",
-    "new": true,
+    "new": false,
     "buildable_status": "expand",
     "energy_label": "a2020",
     "monthly_expense": 3906,
@@ -4120,6 +4424,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 38.9,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 40.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 45.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4167,6 +4478,93 @@ details.build-detail p {
     "is_three_family": false
   },
   {
+    "id": "1a2b66aa-474d-42b9-81fc-ca05634cdedc",
+    "address": "Vagtelvænget 24, 2600 Glostrup",
+    "city": "2600 Glostrup",
+    "municipality": "Glostrup",
+    "price_dkk": 7195000,
+    "link": "https://www.boligsiden.dk/cases/1a2b66aa-474d-42b9-81fc-ca05634cdedc",
+    "preview_image": "https://images.boligsiden.dk/images/case/1a2b66aa-474d-42b9-81fc-ca05634cdedc/600x400/4ee39dcd-ef73-4a87-a034-9a085a194b96.webp",
+    "two_family_confidence": "possible",
+    "two_family_reasons": [
+      "weak two-dwelling hint: 'eget badeværelse'",
+      "vision: plan reads as a single dwelling (heuristic confidence kept)"
+    ],
+    "preferred": true,
+    "rooms": 7,
+    "area_m2": 186,
+    "year_built": 1958,
+    "floors": 1,
+    "type": "villa",
+    "garden_m2": 743,
+    "build_headroom": 37,
+    "build_note": "~37 m² spare at 30% (est.; confirm lokalplan with kommune)",
+    "noise": "quiet",
+    "noise_db": null,
+    "noise_label": "no mapped road/rail noise",
+    "vision": "A single-level layout with three bedrooms, a large living room, and a separate utility/laundry area.",
+    "vision_rooms": [],
+    "vision_multigen_layout": null,
+    "vision_separate_entrance": null,
+    "vision_second_kitchen": null,
+    "vision_privacy_score": null,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": 36.2,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 50.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 35.0
+    },
+    "commute": [
+      {
+        "label": "Høje Taastrup st.",
+        "car_min": 15,
+        "car_km": 11.2,
+        "bike_min": 32,
+        "bike_km": 10.9,
+        "public_min": 32,
+        "public_xfers": 1
+      },
+      {
+        "label": "Stamholmen, Hvidovre",
+        "car_min": 12,
+        "car_km": 11.6,
+        "bike_min": 32,
+        "bike_km": 11.6,
+        "public_min": 52,
+        "public_xfers": 1
+      }
+    ],
+    "sold": [
+      {
+        "year": "2021",
+        "amount": 5570000,
+        "per_m2": 29471
+      },
+      {
+        "year": "1995",
+        "amount": 1200000,
+        "per_m2": 6349
+      }
+    ],
+    "maegler_url": "https://www.realmaeglerne.dk/301-redirect/?mgl=R223&sagsnr=223V8557",
+    "new": false,
+    "buildable_status": "none",
+    "energy_label": "d",
+    "monthly_expense": 4930,
+    "in_price_band": true,
+    "days_on_market": 0,
+    "is_three_family": false
+  },
+  {
     "id": "c6da1c6e-16d9-4769-b73a-c50d04dea739",
     "address": "Krarupvej 39, 2610 Rødovre",
     "city": "2610 Rødovre",
@@ -4205,6 +4603,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 32.9,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 43.0,
+      "garden": 46.0,
+      "shared_living": 0.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4280,6 +4685,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 24.6,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 25.0,
+      "garden": 35.0,
+      "shared_living": 0.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4348,6 +4760,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 49.6,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 70.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4428,6 +4847,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 34.0,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 40.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4508,6 +4934,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 35.7,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 25.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 50.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4540,6 +4973,97 @@ details.build-detail p {
     "buildable_status": "extra_house",
     "energy_label": "a2020",
     "monthly_expense": 4735,
+    "in_price_band": true,
+    "days_on_market": 0,
+    "is_three_family": false
+  },
+  {
+    "id": "343faac0-558f-48cf-8bbf-6246d7be22cb",
+    "address": "Vildmosevej 4, 2690 Karlslunde",
+    "city": "2690 Greve",
+    "municipality": "Greve",
+    "price_dkk": 8495000,
+    "link": "https://www.boligsiden.dk/cases/343faac0-558f-48cf-8bbf-6246d7be22cb",
+    "preview_image": "https://images.boligsiden.dk/images/case/343faac0-558f-48cf-8bbf-6246d7be22cb/600x400/82e4e19b-84ce-47c1-9bf2-5a69dc0c38cb.webp",
+    "two_family_confidence": "possible",
+    "two_family_reasons": [
+      "weak two-dwelling hint: 'dobbelt'"
+    ],
+    "preferred": true,
+    "rooms": 5,
+    "area_m2": 236,
+    "year_built": 1973,
+    "floors": 1,
+    "type": "villa",
+    "garden_m2": 1490,
+    "build_headroom": 211,
+    "build_note": "~211 m² spare at 30% (est.; confirm lokalplan with kommune)",
+    "noise": "quiet",
+    "noise_db": null,
+    "noise_label": "no mapped road/rail noise",
+    "vision": null,
+    "vision_rooms": [],
+    "vision_multigen_layout": null,
+    "vision_separate_entrance": null,
+    "vision_second_kitchen": null,
+    "vision_privacy_score": null,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": 44.0,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 48.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 38.0
+    },
+    "commute": [
+      {
+        "label": "Høje Taastrup st.",
+        "car_min": 17,
+        "car_km": 12.9,
+        "bike_min": 40,
+        "bike_km": 13.2,
+        "public_min": 56,
+        "public_xfers": 1
+      },
+      {
+        "label": "Stamholmen, Hvidovre",
+        "car_min": 18,
+        "car_km": 20.7,
+        "bike_min": 52,
+        "bike_km": 18.5,
+        "public_min": 84,
+        "public_xfers": 2
+      }
+    ],
+    "sold": [
+      {
+        "year": "2017",
+        "amount": 5200000,
+        "per_m2": 21667
+      },
+      {
+        "year": "2015",
+        "amount": 4500000,
+        "per_m2": 18750
+      },
+      {
+        "year": "2005",
+        "amount": 3220000,
+        "per_m2": 13417
+      }
+    ],
+    "maegler_url": "https://www.danbolig.dk?propertyid=1900002663&brokerid=190",
+    "new": false,
+    "buildable_status": "extra_house",
+    "energy_label": "c",
+    "monthly_expense": 4654,
     "in_price_band": true,
     "days_on_market": 0,
     "is_three_family": false
@@ -4582,6 +5106,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 34.6,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 40.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 41.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4667,6 +5198,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 38.3,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 40.0,
+      "garden": 58.0,
+      "shared_living": 10.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4752,6 +5290,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 31.7,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 32.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4827,6 +5372,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 45.4,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 70.0,
+      "garden": 46.0,
+      "shared_living": 10.0,
+      "practical": 47.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4902,6 +5454,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 40.3,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 50.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -4986,6 +5545,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 48.4,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 58.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 45.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5061,6 +5627,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 42.5,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 48.0,
+      "garden": 58.0,
+      "shared_living": 10.0,
+      "practical": 47.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5135,6 +5708,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 29.5,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 33.0,
+      "garden": 35.0,
+      "shared_living": 0.0,
+      "practical": 47.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5209,6 +5789,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 39.4,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 40.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 47.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5283,6 +5870,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 34.6,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 40.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 41.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5362,6 +5956,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 46.9,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 58.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 38.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5399,6 +6000,92 @@ details.build-detail p {
     "buildable_status": "extra_house",
     "energy_label": "c",
     "monthly_expense": 7440,
+    "in_price_band": true,
+    "days_on_market": 0,
+    "is_three_family": false
+  },
+  {
+    "id": "872e15ce-ed4a-4bb4-85ca-3dda4864277f",
+    "address": "Birkebakken 20A, 2840 Holte",
+    "city": "2840 Rudersdal",
+    "municipality": "Rudersdal",
+    "price_dkk": 10995000,
+    "link": "https://www.boligsiden.dk/cases/872e15ce-ed4a-4bb4-85ca-3dda4864277f",
+    "preview_image": "https://images.boligsiden.dk/images/case/872e15ce-ed4a-4bb4-85ca-3dda4864277f/600x400/72f8df2f-3ec6-4d04-a75a-1ad8472c5288.webp",
+    "two_family_confidence": "possible",
+    "two_family_reasons": [
+      "weak two-dwelling hint: 'dobbelt'"
+    ],
+    "preferred": true,
+    "rooms": 5,
+    "area_m2": 167,
+    "year_built": 1922,
+    "floors": 1,
+    "type": "terraced house",
+    "garden_m2": 1970,
+    "build_headroom": 424,
+    "build_note": "~424 m² spare at 30% (est.; confirm lokalplan with kommune)",
+    "noise": "quiet",
+    "noise_db": null,
+    "noise_label": "no mapped road/rail noise",
+    "vision": null,
+    "vision_rooms": [],
+    "vision_multigen_layout": null,
+    "vision_separate_entrance": null,
+    "vision_second_kitchen": null,
+    "vision_privacy_score": null,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": 38.2,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 33.0,
+      "garden": 70.0,
+      "shared_living": 6.0,
+      "practical": 35.0
+    },
+    "commute": [
+      {
+        "label": "Høje Taastrup st.",
+        "car_min": 30,
+        "car_km": 33.6,
+        "bike_min": 84,
+        "bike_km": 28.6,
+        "public_min": 63,
+        "public_xfers": 2
+      },
+      {
+        "label": "Stamholmen, Hvidovre",
+        "car_min": 26,
+        "car_km": 30.1,
+        "bike_min": 77,
+        "bike_km": 26.9,
+        "public_min": 71,
+        "public_xfers": 2
+      }
+    ],
+    "sold": [
+      {
+        "year": "1997",
+        "amount": 2566321,
+        "per_m2": 15367
+      },
+      {
+        "year": "1994",
+        "amount": 1700000,
+        "per_m2": null
+      }
+    ],
+    "maegler_url": "https://www.brikk.dk/redirect.php?caseNumber=1920010151",
+    "new": false,
+    "buildable_status": "extra_house",
+    "energy_label": "d",
+    "monthly_expense": 8465,
     "in_price_band": true,
     "days_on_market": 0,
     "is_three_family": false
@@ -5442,6 +6129,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 42.8,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 58.0,
+      "garden": 58.0,
+      "shared_living": 10.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5489,85 +6183,6 @@ details.build-detail p {
     "is_three_family": false
   },
   {
-    "id": "872e15ce-ed4a-4bb4-85ca-3dda4864277f",
-    "address": "Birkebakken 20A, 2840 Holte",
-    "city": "2840 Rudersdal",
-    "municipality": "Rudersdal",
-    "price_dkk": 10995000,
-    "link": "https://www.boligsiden.dk/cases/872e15ce-ed4a-4bb4-85ca-3dda4864277f",
-    "preview_image": "https://images.boligsiden.dk/images/case/872e15ce-ed4a-4bb4-85ca-3dda4864277f/600x400/72f8df2f-3ec6-4d04-a75a-1ad8472c5288.webp",
-    "two_family_confidence": "possible",
-    "two_family_reasons": [
-      "weak two-dwelling hint: 'dobbelt'"
-    ],
-    "preferred": true,
-    "rooms": 5,
-    "area_m2": 167,
-    "year_built": 1922,
-    "floors": 1,
-    "type": "terraced house",
-    "garden_m2": 1970,
-    "build_headroom": 424,
-    "build_note": "~424 m² spare at 30% (est.; confirm lokalplan with kommune)",
-    "noise": "quiet",
-    "noise_db": null,
-    "noise_label": "no mapped road/rail noise",
-    "vision": null,
-    "vision_rooms": [],
-    "vision_multigen_layout": null,
-    "vision_separate_entrance": null,
-    "vision_second_kitchen": null,
-    "vision_privacy_score": null,
-    "vision_bathroom_count": null,
-    "vision_bedroom_count": null,
-    "vision_parking_count": null,
-    "vision_garden_orientation": "",
-    "vision_garden_structure": "",
-    "vision_dining_capacity": null,
-    "vision_kitchen_size": "",
-    "family_score": 38.2,
-    "commute": [
-      {
-        "label": "Høje Taastrup st.",
-        "car_min": 30,
-        "car_km": 33.6,
-        "bike_min": 84,
-        "bike_km": 28.6,
-        "public_min": 63,
-        "public_xfers": 2
-      },
-      {
-        "label": "Stamholmen, Hvidovre",
-        "car_min": 26,
-        "car_km": 30.1,
-        "bike_min": 77,
-        "bike_km": 26.9,
-        "public_min": 71,
-        "public_xfers": 2
-      }
-    ],
-    "sold": [
-      {
-        "year": "1997",
-        "amount": 2566321,
-        "per_m2": 15367
-      },
-      {
-        "year": "1994",
-        "amount": 1700000,
-        "per_m2": null
-      }
-    ],
-    "maegler_url": "https://www.brikk.dk/redirect.php?caseNumber=1920010151",
-    "new": false,
-    "buildable_status": "extra_house",
-    "energy_label": "d",
-    "monthly_expense": 8465,
-    "in_price_band": true,
-    "days_on_market": 0,
-    "is_three_family": false
-  },
-  {
     "id": "efce1e34-1d17-4f0f-a00e-c17217fcc496",
     "address": "Moselundvej 28, 2770 Kastrup",
     "city": "2770 Tårnby",
@@ -5605,6 +6220,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 39.4,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 50.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 50.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5689,6 +6311,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 38.9,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 40.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 45.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5757,6 +6386,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 37.6,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 58.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 31.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5831,6 +6467,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 43.6,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 66.0,
+      "garden": 58.0,
+      "shared_living": 10.0,
+      "practical": 28.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5905,6 +6548,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 29.1,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 23.0,
+      "garden": 58.0,
+      "shared_living": 0.0,
+      "practical": 28.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -5952,81 +6602,6 @@ details.build-detail p {
     "is_three_family": false
   },
   {
-    "id": "484def68-d151-4b08-9d31-722bd1676da4",
-    "address": "Johannedalsvej 31, 3650 Ølstykke",
-    "city": "3650 Egedal",
-    "municipality": "Egedal",
-    "price_dkk": 5695000,
-    "link": "https://www.boligsiden.dk/cases/484def68-d151-4b08-9d31-722bd1676da4",
-    "preview_image": "https://images.boligsiden.dk/images/case/484def68-d151-4b08-9d31-722bd1676da4/600x400/7c674b31-9ec0-4ada-8c83-0b9c3b6b534f.webp",
-    "two_family_confidence": "possible",
-    "two_family_reasons": [
-      "weak two-dwelling hint: 'dobbelt'",
-      "vision: plan reads as a single dwelling (heuristic confidence kept)"
-    ],
-    "preferred": false,
-    "rooms": 6,
-    "area_m2": 160,
-    "year_built": 1965,
-    "floors": 2,
-    "type": "villa",
-    "garden_m2": 820,
-    "build_headroom": 86,
-    "build_note": "~86 m² spare at 30% (est.; confirm lokalplan with kommune)",
-    "noise": "quiet",
-    "noise_db": null,
-    "noise_label": "no mapped road/rail noise",
-    "vision": "The property consists of a ground floor with a living area and garage, a first floor with three bedrooms, and a basement level with storage space.",
-    "vision_rooms": [],
-    "vision_multigen_layout": null,
-    "vision_separate_entrance": null,
-    "vision_second_kitchen": null,
-    "vision_privacy_score": null,
-    "vision_bathroom_count": null,
-    "vision_bedroom_count": null,
-    "vision_parking_count": null,
-    "vision_garden_orientation": "",
-    "vision_garden_structure": "",
-    "vision_dining_capacity": null,
-    "vision_kitchen_size": "",
-    "family_score": 37.8,
-    "commute": [
-      {
-        "label": "Høje Taastrup st.",
-        "car_min": 30,
-        "car_km": 31.1,
-        "bike_min": 69,
-        "bike_km": 23.0,
-        "public_min": 55,
-        "public_xfers": 1
-      },
-      {
-        "label": "Stamholmen, Hvidovre",
-        "car_min": 33,
-        "car_km": 36.5,
-        "bike_min": 103,
-        "bike_km": 35.9,
-        "public_min": 79,
-        "public_xfers": 2
-      }
-    ],
-    "sold": [
-      {
-        "year": "1998",
-        "amount": 935000,
-        "per_m2": 5844
-      }
-    ],
-    "maegler_url": "https://www.realmaeglerne.dk/301-redirect/?mgl=R322&sagsnr=32226028",
-    "new": false,
-    "buildable_status": "extra_house",
-    "energy_label": "d",
-    "monthly_expense": 4113,
-    "in_price_band": true,
-    "days_on_market": 0,
-    "is_three_family": false
-  },
-  {
     "id": "3c02b2f8-f0a5-490d-93ca-2e329b89c89e",
     "address": "Roskildevej 321A, 2630 Taastrup",
     "city": "2630 Høje-Taastrup",
@@ -6065,6 +6640,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 35.5,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 40.0,
+      "garden": 70.0,
+      "shared_living": 6.0,
+      "practical": 13.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6145,6 +6727,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 27.7,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 41.0,
+      "garden": 35.0,
+      "shared_living": 0.0,
+      "practical": 28.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6230,6 +6819,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 25.4,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 33.0,
+      "garden": 35.0,
+      "shared_living": 0.0,
+      "practical": 28.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6309,6 +6905,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 39.1,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 48.0,
+      "garden": 58.0,
+      "shared_living": 10.0,
+      "practical": 31.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6384,6 +6987,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 49.8,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 78.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 25.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6468,6 +7078,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 42.8,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 58.0,
+      "garden": 58.0,
+      "shared_living": 10.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6548,6 +7165,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 33.1,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 51.0,
+      "garden": 46.0,
+      "shared_living": 0.0,
+      "practical": 25.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6623,6 +7247,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 44.1,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 58.0,
+      "garden": 58.0,
+      "shared_living": 10.0,
+      "practical": 41.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6703,6 +7334,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 40.4,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 70.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 28.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6787,6 +7425,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 31.0,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 48.0,
+      "garden": 35.0,
+      "shared_living": 6.0,
+      "practical": 28.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6872,6 +7517,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 41.5,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 58.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 13.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -6898,6 +7550,87 @@ details.build-detail p {
     "buildable_status": "extra_house",
     "energy_label": "c",
     "monthly_expense": 5893,
+    "in_price_band": true,
+    "days_on_market": 0,
+    "is_three_family": false
+  },
+  {
+    "id": "6db3951a-7146-4520-926b-5d9001ba6fa0",
+    "address": "Biskop Svanes Vej 45A, 3460 Birkerød",
+    "city": "3460 Rudersdal",
+    "municipality": "Rudersdal",
+    "price_dkk": 7995000,
+    "link": "https://www.boligsiden.dk/cases/6db3951a-7146-4520-926b-5d9001ba6fa0",
+    "preview_image": "https://images.boligsiden.dk/images/case/6db3951a-7146-4520-926b-5d9001ba6fa0/600x400/fab17bc8-b82e-4922-b6b7-48c98e779cd0.webp",
+    "two_family_confidence": "possible",
+    "two_family_reasons": [
+      "weak two-dwelling hint: 'dobbelt'"
+    ],
+    "preferred": false,
+    "rooms": 7,
+    "area_m2": 177,
+    "year_built": 1964,
+    "floors": 2,
+    "type": "terraced house",
+    "garden_m2": 743,
+    "build_headroom": 46,
+    "build_note": "~46 m² spare at 30% (est.; confirm lokalplan with kommune)",
+    "noise": "quiet",
+    "noise_db": null,
+    "noise_label": "no mapped road/rail noise",
+    "vision": null,
+    "vision_rooms": [],
+    "vision_multigen_layout": null,
+    "vision_separate_entrance": null,
+    "vision_second_kitchen": null,
+    "vision_privacy_score": null,
+    "vision_bathroom_count": null,
+    "vision_bedroom_count": null,
+    "vision_parking_count": null,
+    "vision_garden_orientation": "",
+    "vision_garden_structure": "",
+    "vision_dining_capacity": null,
+    "vision_kitchen_size": "",
+    "family_score": 36.5,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 51.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 35.0
+    },
+    "commute": [
+      {
+        "label": "Høje Taastrup st.",
+        "car_min": 33,
+        "car_km": 34.4,
+        "bike_min": 91,
+        "bike_km": 31.1,
+        "public_min": 63,
+        "public_xfers": 2
+      },
+      {
+        "label": "Stamholmen, Hvidovre",
+        "car_min": 31,
+        "car_km": 35.5,
+        "bike_min": 90,
+        "bike_km": 31.4,
+        "public_min": 72,
+        "public_xfers": 2
+      }
+    ],
+    "sold": [
+      {
+        "year": "2013",
+        "amount": 2700000,
+        "per_m2": 19708
+      }
+    ],
+    "maegler_url": "https://www.danbolig.dk?propertyid=0350002068&brokerid=035",
+    "new": false,
+    "buildable_status": "expand",
+    "energy_label": "a2010",
+    "monthly_expense": 6519,
     "in_price_band": true,
     "days_on_market": 0,
     "is_three_family": false
@@ -6940,6 +7673,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 41.0,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 48.0,
+      "garden": 70.0,
+      "shared_living": 6.0,
+      "practical": 28.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7009,6 +7749,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 29.3,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 40.0,
+      "garden": 46.0,
+      "shared_living": 6.0,
+      "practical": 16.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7056,159 +7803,6 @@ details.build-detail p {
     "is_three_family": false
   },
   {
-    "id": "6db3951a-7146-4520-926b-5d9001ba6fa0",
-    "address": "Biskop Svanes Vej 45A, 3460 Birkerød",
-    "city": "3460 Rudersdal",
-    "municipality": "Rudersdal",
-    "price_dkk": 7995000,
-    "link": "https://www.boligsiden.dk/cases/6db3951a-7146-4520-926b-5d9001ba6fa0",
-    "preview_image": "https://images.boligsiden.dk/images/case/6db3951a-7146-4520-926b-5d9001ba6fa0/600x400/fab17bc8-b82e-4922-b6b7-48c98e779cd0.webp",
-    "two_family_confidence": "possible",
-    "two_family_reasons": [
-      "weak two-dwelling hint: 'dobbelt'"
-    ],
-    "preferred": false,
-    "rooms": 7,
-    "area_m2": 177,
-    "year_built": 1964,
-    "floors": 2,
-    "type": "terraced house",
-    "garden_m2": 743,
-    "build_headroom": 46,
-    "build_note": "~46 m² spare at 30% (est.; confirm lokalplan with kommune)",
-    "noise": "quiet",
-    "noise_db": null,
-    "noise_label": "no mapped road/rail noise",
-    "vision": null,
-    "vision_rooms": [],
-    "vision_multigen_layout": null,
-    "vision_separate_entrance": null,
-    "vision_second_kitchen": null,
-    "vision_privacy_score": null,
-    "vision_bathroom_count": null,
-    "vision_bedroom_count": null,
-    "vision_parking_count": null,
-    "vision_garden_orientation": "",
-    "vision_garden_structure": "",
-    "vision_dining_capacity": null,
-    "vision_kitchen_size": "",
-    "family_score": 36.5,
-    "commute": [
-      {
-        "label": "Høje Taastrup st.",
-        "car_min": 33,
-        "car_km": 34.4,
-        "bike_min": 91,
-        "bike_km": 31.1,
-        "public_min": 63,
-        "public_xfers": 2
-      },
-      {
-        "label": "Stamholmen, Hvidovre",
-        "car_min": 31,
-        "car_km": 35.5,
-        "bike_min": 90,
-        "bike_km": 31.4,
-        "public_min": 72,
-        "public_xfers": 2
-      }
-    ],
-    "sold": [
-      {
-        "year": "2013",
-        "amount": 2700000,
-        "per_m2": 19708
-      }
-    ],
-    "maegler_url": "https://www.danbolig.dk?propertyid=0350002068&brokerid=035",
-    "new": false,
-    "buildable_status": "expand",
-    "energy_label": "a2010",
-    "monthly_expense": 6519,
-    "in_price_band": true,
-    "days_on_market": 0,
-    "is_three_family": false
-  },
-  {
-    "id": "7a84c306-b64f-4641-a35c-e232a98414dd",
-    "address": "Klitvej 1A, 2690 Karlslunde",
-    "city": "2690 Greve",
-    "municipality": "Greve",
-    "price_dkk": 8475000,
-    "link": "https://www.boligsiden.dk/cases/7a84c306-b64f-4641-a35c-e232a98414dd",
-    "preview_image": "https://images.boligsiden.dk/images/case/7a84c306-b64f-4641-a35c-e232a98414dd/600x400/9068ce57-9ccb-4978-a682-61cc1a5a2f50.webp",
-    "two_family_confidence": "possible",
-    "two_family_reasons": [
-      "weak two-dwelling hint: 'dobbelt'"
-    ],
-    "preferred": false,
-    "rooms": 4,
-    "area_m2": 198,
-    "year_built": 2024,
-    "floors": 2,
-    "type": "villa",
-    "garden_m2": 655,
-    "build_headroom": -2,
-    "build_note": "~-2 m² spare at 30% (est.; confirm lokalplan with kommune)",
-    "noise": "quiet",
-    "noise_db": null,
-    "noise_label": "no mapped road/rail noise",
-    "vision": null,
-    "vision_rooms": [],
-    "vision_multigen_layout": null,
-    "vision_separate_entrance": null,
-    "vision_second_kitchen": null,
-    "vision_privacy_score": null,
-    "vision_bathroom_count": null,
-    "vision_bedroom_count": null,
-    "vision_parking_count": null,
-    "vision_garden_orientation": "",
-    "vision_garden_structure": "",
-    "vision_dining_capacity": null,
-    "vision_kitchen_size": "",
-    "family_score": 33.8,
-    "commute": [
-      {
-        "label": "Høje Taastrup st.",
-        "car_min": 16,
-        "car_km": 15.2,
-        "bike_min": 43,
-        "bike_km": 14.2,
-        "public_min": 43,
-        "public_xfers": 0
-      },
-      {
-        "label": "Stamholmen, Hvidovre",
-        "car_min": 17,
-        "car_km": 20.1,
-        "bike_min": 49,
-        "bike_km": 17.2,
-        "public_min": 53,
-        "public_xfers": 2
-      }
-    ],
-    "sold": [
-      {
-        "year": "2022",
-        "amount": 5550000,
-        "per_m2": 28030
-      },
-      {
-        "year": "2022",
-        "amount": 5500000,
-        "per_m2": 29101
-      }
-    ],
-    "maegler_url": "https://mhbolig.dk/ejendom/26800000661",
-    "new": false,
-    "buildable_status": "none",
-    "energy_label": "a2015",
-    "monthly_expense": 5190,
-    "in_price_band": true,
-    "days_on_market": 0,
-    "is_three_family": false
-  },
-  {
     "id": "5afb6903-93e5-4f17-94ae-2a16b28a992e",
     "address": "Teglværksvej 1, 4681 Herfølge",
     "city": "4681 Køge",
@@ -7246,6 +7840,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 44.6,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 63.0,
+      "garden": 70.0,
+      "shared_living": 6.0,
+      "practical": 25.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7330,6 +7931,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 48.5,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 66.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7405,6 +8013,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 40.4,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 58.0,
+      "garden": 58.0,
+      "shared_living": 6.0,
+      "practical": 28.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7490,6 +8105,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 45.2,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 50.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 41.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7570,6 +8192,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 46.5,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 62.0,
+      "garden": 70.0,
+      "shared_living": 6.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7638,6 +8267,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 48.5,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 66.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7723,6 +8359,13 @@ details.build-detail p {
     "vision_dining_capacity": null,
     "vision_kitchen_size": "",
     "family_score": 46.2,
+    "family_score_breakdown": {
+      "privacy": 0.0,
+      "kids_space": 58.0,
+      "garden": 70.0,
+      "shared_living": 10.0,
+      "practical": 35.0
+    },
     "commute": [
       {
         "label": "Høje Taastrup st.",
@@ -7896,7 +8539,28 @@ function buildCard(l) {
 
   return '<div class="card-img-wrap">' +
     '<img src="' + l.preview_image + '" alt="Foto af ' + l.address + ', ' + l.city + '" width="600" height="400" loading="lazy">' +
-    (l.family_score != null ? '<div class="fscore-img-badge ' + (l.family_score >= 70 ? 'fscore-img-high' : (l.family_score >= 50 ? 'fscore-img-mid' : 'fscore-img-low')) + '" role="status" aria-label="Familie-score: ' + Math.round(l.family_score) + ' ud af 100">\uD83C\uDFE1 Familie-score: ' + Math.round(l.family_score*10)/10 + '/100</div>' : '<div class="fscore-img-badge fscore-img-none" role="status">\uD83C\uDFE1 Ingen score</div>') +
+    (function(){
+      if (l.family_score == null) return '<div class="fscore-img-badge fscore-img-none" role="status">\uD83C\uDFE1 Ingen score</div>';
+      var cls = l.family_score >= 70 ? 'fscore-img-high' : (l.family_score >= 50 ? 'fscore-img-mid' : 'fscore-img-low');
+      var b = l.family_score_breakdown || {};
+      var rows = [
+        ['Privatliv',    b.privacy,       30],
+        ['B\u00f8rnerum',    b.kids_space,    20],
+        ['Have',         b.garden,        20],
+        ['F\u00e6lles',      b.shared_living, 15],
+        ['Praktisk',     b.practical,     15],
+      ].map(function(r){
+        var val = r[1] != null ? Math.round(r[1]) + '/100' : '\u2013';
+        var weighted = (r[1] != null) ? (r[1] * r[2] / 100).toFixed(1) : '\u2013';
+        return '<tr><td>' + r[0] + ' <span style="opacity:.6">(' + r[2] + '%)</span></td><td>' + val + '</td><td>' + weighted + '</td></tr>';
+      }).join('');
+      var tooltip = '<div class="fscore-tooltip"><table>'
+        + '<tr><td style="opacity:.6;font-size:.65rem" colspan="3">Dimension&nbsp;&nbsp;Score&nbsp;&nbsp;Bidrag</td></tr>'
+        + rows
+        + '<tr class="total-row"><td colspan="2">Total</td><td>' + Math.round(l.family_score*10)/10 + '</td></tr>'
+        + '</table></div>';
+      return '<div class="fscore-img-badge ' + cls + '" role="status" aria-label="Familie-score: ' + Math.round(l.family_score) + ' ud af 100">\uD83C\uDFE1 Familie-score: ' + Math.round(l.family_score*10)/10 + '/100' + tooltip + '</div>';
+    })() +
     noiseChip +
     (l.preferred ? '<div class="pref-badge" aria-label="Anbefalet: enkelt etage, velegnet til ældre">' + I.star + ' Én etage</div>' : '') +
     '<div class="img-price-overlay" aria-label="' + l.address + ' · Salgspris: ' + fmtDKK(l.price_dkk) + '">' +
